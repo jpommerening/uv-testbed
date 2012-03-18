@@ -302,6 +302,7 @@
 		59D3C3B715164C360093A141 /* watcom_f.mak in Sources */ = {isa = PBXBuildFile; fileRef = 59D3C27D15164C350093A141 /* watcom_f.mak */; };
 		59D3C3B815164C360093A141 /* watcom_l.mak in Sources */ = {isa = PBXBuildFile; fileRef = 59D3C27E15164C350093A141 /* watcom_l.mak */; };
 		59D3C3B915164C360093A141 /* zutil.c in Sources */ = {isa = PBXBuildFile; fileRef = 59D3C29215164C350093A141 /* zutil.c */; };
+		59D3C3BB15164D450093A141 /* main.c in Sources */ = {isa = PBXBuildFile; fileRef = 59D3C3BA15164D450093A141 /* main.c */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -935,6 +936,8 @@
 		59D3C29115164C350093A141 /* zlib2ansi */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.perl; path = zlib2ansi; sourceTree = "<group>"; };
 		59D3C29215164C350093A141 /* zutil.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = zutil.c; sourceTree = "<group>"; };
 		59D3C29315164C350093A141 /* zutil.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = zutil.h; sourceTree = "<group>"; };
+		59D3C3BA15164D450093A141 /* main.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = main.c; sourceTree = "<group>"; };
+		59D3C3BC15164E9A0093A141 /* uv_testbed.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = uv_testbed.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -981,6 +984,7 @@
 		59D3BFE515164BB10093A141 /* include */ = {
 			isa = PBXGroup;
 			children = (
+				59D3C3BC15164E9A0093A141 /* uv_testbed.h */,
 			);
 			path = include;
 			sourceTree = "<group>";
@@ -988,6 +992,7 @@
 		59D3BFE715164BB10093A141 /* src */ = {
 			isa = PBXGroup;
 			children = (
+				59D3C3BA15164D450093A141 /* main.c */,
 			);
 			path = src;
 			sourceTree = "<group>";
@@ -2486,6 +2491,7 @@
 				59D3C3B715164C360093A141 /* watcom_f.mak in Sources */,
 				59D3C3B815164C360093A141 /* watcom_l.mak in Sources */,
 				59D3C3B915164C360093A141 /* zutil.c in Sources */,
+				59D3C3BB15164D450093A141 /* main.c in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -2512,9 +2518,15 @@
 				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
+				HEADER_SEARCH_PATHS = (
+					"$(PROJECT_DIR)/deps/jemalloc/include",
+					"$(PROJECT_DIR)/deps/libuv/include",
+					"$(PROJECT_DIR)/deps/zlib",
+				);
 				MACOSX_DEPLOYMENT_TARGET = 10.7;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = macosx;
+				USER_HEADER_SEARCH_PATHS = "$(PROJECT_DIR)/include";
 			};
 			name = Debug;
 		};
@@ -2532,8 +2544,14 @@
 				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
+				HEADER_SEARCH_PATHS = (
+					"$(PROJECT_DIR)/deps/jemalloc/include",
+					"$(PROJECT_DIR)/deps/libuv/include",
+					"$(PROJECT_DIR)/deps/zlib",
+				);
 				MACOSX_DEPLOYMENT_TARGET = 10.7;
 				SDKROOT = macosx;
+				USER_HEADER_SEARCH_PATHS = "$(PROJECT_DIR)/include";
 			};
 			name = Release;
 		};
