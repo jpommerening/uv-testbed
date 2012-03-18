@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		597B1544151676A300229222 /* jemalloc.c in Sources */ = {isa = PBXBuildFile; fileRef = 597B15331516768300229222 /* jemalloc.c */; };
+		597B1545151676F500229222 /* libjemalloc.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 597B15401516769F00229222 /* libjemalloc.a */; };
 		59D3C3BB15164D450093A141 /* main.c in Sources */ = {isa = PBXBuildFile; fileRef = 59D3C3BA15164D450093A141 /* main.c */; };
 		59D3C3DC151653700093A141 /* uv.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 59D3C3C115164F1D0093A141 /* uv.a */; };
 		59D3C3DE151653780093A141 /* libz.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 59D3C3D6151652AD0093A141 /* libz.a */; };
@@ -25,89 +27,20 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		597B15331516768300229222 /* jemalloc.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = jemalloc.c; sourceTree = "<group>"; };
+		597B15341516768300229222 /* jemalloc.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = jemalloc.h; sourceTree = "<group>"; };
+		597B15351516768300229222 /* jemalloc_types.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = jemalloc_types.h; sourceTree = "<group>"; };
+		597B15361516768300229222 /* linkedlist.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = linkedlist.h; sourceTree = "<group>"; };
+		597B15371516768300229222 /* Makefile */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.make; path = Makefile; sourceTree = "<group>"; };
+		597B15381516768300229222 /* osx_zone_types.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = osx_zone_types.h; sourceTree = "<group>"; };
+		597B15391516768300229222 /* ql.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ql.h; sourceTree = "<group>"; };
+		597B153A1516768300229222 /* qr.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = qr.h; sourceTree = "<group>"; };
+		597B153B1516768300229222 /* rb.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = rb.h; sourceTree = "<group>"; };
+		597B15401516769F00229222 /* libjemalloc.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libjemalloc.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		597B154615167ACE00229222 /* COPYING.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = COPYING.md; sourceTree = "<group>"; };
+		597B154715167ACE00229222 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = README.md; sourceTree = "<group>"; };
 		59D3BFD715164B6B0093A141 /* uv-testbed */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = "uv-testbed"; sourceTree = BUILT_PRODUCTS_DIR; };
 		59D3BFE615164BB10093A141 /* Makefile */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.make; path = Makefile; sourceTree = "<group>"; };
-		59D3BFEB15164C350093A141 /* .gitignore */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = .gitignore; sourceTree = "<group>"; };
-		59D3BFEC15164C350093A141 /* autogen.sh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.sh; path = autogen.sh; sourceTree = "<group>"; };
-		59D3BFEE15164C350093A141 /* pprof */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = pprof; sourceTree = "<group>"; };
-		59D3BFEF15164C350093A141 /* ChangeLog */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = ChangeLog; sourceTree = "<group>"; };
-		59D3BFF015164C350093A141 /* config.guess */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.sh; path = config.guess; sourceTree = "<group>"; };
-		59D3BFF115164C350093A141 /* config.stamp.in */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = config.stamp.in; sourceTree = "<group>"; };
-		59D3BFF215164C350093A141 /* config.sub */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.sh; path = config.sub; sourceTree = "<group>"; };
-		59D3BFF315164C350093A141 /* configure.ac */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = configure.ac; sourceTree = "<group>"; };
-		59D3BFF415164C350093A141 /* COPYING */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = COPYING; sourceTree = "<group>"; };
-		59D3BFF615164C350093A141 /* html.xsl.in */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = html.xsl.in; sourceTree = "<group>"; };
-		59D3BFF715164C350093A141 /* jemalloc.xml.in */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = jemalloc.xml.in; sourceTree = "<group>"; };
-		59D3BFF815164C350093A141 /* manpages.xsl.in */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = manpages.xsl.in; sourceTree = "<group>"; };
-		59D3BFF915164C350093A141 /* stylesheet.xsl */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = stylesheet.xsl; sourceTree = "<group>"; };
-		59D3BFFD15164C350093A141 /* arena.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = arena.h; sourceTree = "<group>"; };
-		59D3BFFE15164C350093A141 /* atomic.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = atomic.h; sourceTree = "<group>"; };
-		59D3BFFF15164C350093A141 /* base.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = base.h; sourceTree = "<group>"; };
-		59D3C00015164C350093A141 /* bitmap.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = bitmap.h; sourceTree = "<group>"; };
-		59D3C00115164C350093A141 /* chunk.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = chunk.h; sourceTree = "<group>"; };
-		59D3C00215164C350093A141 /* chunk_dss.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = chunk_dss.h; sourceTree = "<group>"; };
-		59D3C00315164C350093A141 /* chunk_mmap.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = chunk_mmap.h; sourceTree = "<group>"; };
-		59D3C00415164C350093A141 /* chunk_swap.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = chunk_swap.h; sourceTree = "<group>"; };
-		59D3C00515164C350093A141 /* ckh.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ckh.h; sourceTree = "<group>"; };
-		59D3C00615164C350093A141 /* ctl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ctl.h; sourceTree = "<group>"; };
-		59D3C00715164C350093A141 /* extent.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = extent.h; sourceTree = "<group>"; };
-		59D3C00815164C350093A141 /* hash.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = hash.h; sourceTree = "<group>"; };
-		59D3C00915164C350093A141 /* huge.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = huge.h; sourceTree = "<group>"; };
-		59D3C00A15164C350093A141 /* jemalloc_internal.h.in */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = jemalloc_internal.h.in; sourceTree = "<group>"; };
-		59D3C00B15164C350093A141 /* mb.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = mb.h; sourceTree = "<group>"; };
-		59D3C00C15164C350093A141 /* mutex.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = mutex.h; sourceTree = "<group>"; };
-		59D3C00D15164C350093A141 /* private_namespace.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = private_namespace.h; sourceTree = "<group>"; };
-		59D3C00E15164C350093A141 /* prng.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = prng.h; sourceTree = "<group>"; };
-		59D3C00F15164C350093A141 /* prof.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = prof.h; sourceTree = "<group>"; };
-		59D3C01015164C350093A141 /* ql.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ql.h; sourceTree = "<group>"; };
-		59D3C01115164C350093A141 /* qr.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = qr.h; sourceTree = "<group>"; };
-		59D3C01215164C350093A141 /* rb.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = rb.h; sourceTree = "<group>"; };
-		59D3C01315164C350093A141 /* rtree.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = rtree.h; sourceTree = "<group>"; };
-		59D3C01415164C350093A141 /* stats.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = stats.h; sourceTree = "<group>"; };
-		59D3C01515164C350093A141 /* tcache.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = tcache.h; sourceTree = "<group>"; };
-		59D3C01615164C350093A141 /* zone.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = zone.h; sourceTree = "<group>"; };
-		59D3C01715164C350093A141 /* jemalloc.h.in */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = jemalloc.h.in; sourceTree = "<group>"; };
-		59D3C01815164C350093A141 /* jemalloc_defs.h.in */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = jemalloc_defs.h.in; sourceTree = "<group>"; };
-		59D3C01915164C350093A141 /* INSTALL */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = INSTALL; sourceTree = "<group>"; };
-		59D3C01A15164C350093A141 /* install-sh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.sh; path = "install-sh"; sourceTree = "<group>"; };
-		59D3C01B15164C350093A141 /* Makefile.in */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Makefile.in; sourceTree = "<group>"; };
-		59D3C01C15164C350093A141 /* README */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = README; sourceTree = "<group>"; };
-		59D3C01E15164C350093A141 /* arena.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = arena.c; sourceTree = "<group>"; };
-		59D3C01F15164C350093A141 /* atomic.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = atomic.c; sourceTree = "<group>"; };
-		59D3C02015164C350093A141 /* base.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = base.c; sourceTree = "<group>"; };
-		59D3C02115164C350093A141 /* bitmap.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = bitmap.c; sourceTree = "<group>"; };
-		59D3C02215164C350093A141 /* chunk.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = chunk.c; sourceTree = "<group>"; };
-		59D3C02315164C350093A141 /* chunk_dss.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = chunk_dss.c; sourceTree = "<group>"; };
-		59D3C02415164C350093A141 /* chunk_mmap.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = chunk_mmap.c; sourceTree = "<group>"; };
-		59D3C02515164C350093A141 /* chunk_swap.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = chunk_swap.c; sourceTree = "<group>"; };
-		59D3C02615164C350093A141 /* ckh.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = ckh.c; sourceTree = "<group>"; };
-		59D3C02715164C350093A141 /* ctl.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = ctl.c; sourceTree = "<group>"; };
-		59D3C02815164C350093A141 /* extent.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = extent.c; sourceTree = "<group>"; };
-		59D3C02915164C350093A141 /* hash.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = hash.c; sourceTree = "<group>"; };
-		59D3C02A15164C350093A141 /* huge.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = huge.c; sourceTree = "<group>"; };
-		59D3C02B15164C350093A141 /* jemalloc.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = jemalloc.c; sourceTree = "<group>"; };
-		59D3C02C15164C350093A141 /* mb.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = mb.c; sourceTree = "<group>"; };
-		59D3C02D15164C350093A141 /* mutex.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = mutex.c; sourceTree = "<group>"; };
-		59D3C02E15164C350093A141 /* prof.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = prof.c; sourceTree = "<group>"; };
-		59D3C02F15164C350093A141 /* rtree.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = rtree.c; sourceTree = "<group>"; };
-		59D3C03015164C350093A141 /* stats.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = stats.c; sourceTree = "<group>"; };
-		59D3C03115164C350093A141 /* tcache.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = tcache.c; sourceTree = "<group>"; };
-		59D3C03215164C350093A141 /* zone.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = zone.c; sourceTree = "<group>"; };
-		59D3C03415164C350093A141 /* allocated.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = allocated.c; sourceTree = "<group>"; };
-		59D3C03515164C350093A141 /* allocated.exp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.exports; path = allocated.exp; sourceTree = "<group>"; };
-		59D3C03615164C350093A141 /* allocm.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = allocm.c; sourceTree = "<group>"; };
-		59D3C03715164C350093A141 /* allocm.exp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.exports; path = allocm.exp; sourceTree = "<group>"; };
-		59D3C03815164C350093A141 /* bitmap.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = bitmap.c; sourceTree = "<group>"; };
-		59D3C03915164C350093A141 /* bitmap.exp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.exports; path = bitmap.exp; sourceTree = "<group>"; };
-		59D3C03A15164C350093A141 /* jemalloc_test.h.in */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = jemalloc_test.h.in; sourceTree = "<group>"; };
-		59D3C03B15164C350093A141 /* mremap.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = mremap.c; sourceTree = "<group>"; };
-		59D3C03C15164C350093A141 /* mremap.exp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.exports; path = mremap.exp; sourceTree = "<group>"; };
-		59D3C03D15164C350093A141 /* posix_memalign.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = posix_memalign.c; sourceTree = "<group>"; };
-		59D3C03E15164C350093A141 /* posix_memalign.exp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.exports; path = posix_memalign.exp; sourceTree = "<group>"; };
-		59D3C03F15164C350093A141 /* rallocm.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = rallocm.c; sourceTree = "<group>"; };
-		59D3C04015164C350093A141 /* rallocm.exp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.exports; path = rallocm.exp; sourceTree = "<group>"; };
-		59D3C04115164C350093A141 /* thread_arena.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = thread_arena.c; sourceTree = "<group>"; };
-		59D3C04215164C350093A141 /* thread_arena.exp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.exports; path = thread_arena.exp; sourceTree = "<group>"; };
 		59D3C04415164C350093A141 /* .gitignore */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = .gitignore; sourceTree = "<group>"; };
 		59D3C04515164C350093A141 /* .mailmap */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = .mailmap; sourceTree = "<group>"; };
 		59D3C04615164C350093A141 /* .travis.yml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = .travis.yml; sourceTree = "<group>"; };
@@ -646,24 +579,49 @@
 		59D3C3BA15164D450093A141 /* main.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = main.c; sourceTree = "<group>"; };
 		59D3C3BC15164E9A0093A141 /* uv_testbed.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = uv_testbed.h; sourceTree = "<group>"; };
 		59D3C3C115164F1D0093A141 /* uv.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = uv.a; sourceTree = BUILT_PRODUCTS_DIR; };
-		59D3C3CD151651500093A141 /* libjemalloc.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libjemalloc.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		59D3C3D6151652AD0093A141 /* libz.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libz.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		59D3C3DF151654860093A141 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = README.md; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		597B153D1516769F00229222 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		59D3BFD415164B6B0093A141 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				59D3C3DC151653700093A141 /* uv.a in Frameworks */,
 				59D3C3DE151653780093A141 /* libz.a in Frameworks */,
+				597B1545151676F500229222 /* libjemalloc.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		597B15321516768300229222 /* jemalloc */ = {
+			isa = PBXGroup;
+			children = (
+				597B15371516768300229222 /* Makefile */,
+				597B154615167ACE00229222 /* COPYING.md */,
+				597B154715167ACE00229222 /* README.md */,
+				597B15331516768300229222 /* jemalloc.c */,
+				597B15341516768300229222 /* jemalloc.h */,
+				597B15351516768300229222 /* jemalloc_types.h */,
+				597B15361516768300229222 /* linkedlist.h */,
+				597B15381516768300229222 /* osx_zone_types.h */,
+				597B15391516768300229222 /* ql.h */,
+				597B153A1516768300229222 /* qr.h */,
+				597B153B1516768300229222 /* rb.h */,
+			);
+			path = jemalloc;
+			sourceTree = "<group>";
+		};
 		59D3BFCC15164B6B0093A141 = {
 			isa = PBXGroup;
 			children = (
@@ -682,8 +640,8 @@
 			children = (
 				59D3BFD715164B6B0093A141 /* uv-testbed */,
 				59D3C3C115164F1D0093A141 /* uv.a */,
-				59D3C3CD151651500093A141 /* libjemalloc.a */,
 				59D3C3D6151652AD0093A141 /* libz.a */,
+				597B15401516769F00229222 /* libjemalloc.a */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -691,7 +649,7 @@
 		59D3BFE415164BB10093A141 /* deps */ = {
 			isa = PBXGroup;
 			children = (
-				59D3BFEA15164C350093A141 /* jemalloc */,
+				597B15321516768300229222 /* jemalloc */,
 				59D3C04315164C350093A141 /* libuv */,
 				59D3C18915164C350093A141 /* zlib */,
 			);
@@ -717,150 +675,6 @@
 		59D3BFE815164BB10093A141 /* test */ = {
 			isa = PBXGroup;
 			children = (
-			);
-			path = test;
-			sourceTree = "<group>";
-		};
-		59D3BFEA15164C350093A141 /* jemalloc */ = {
-			isa = PBXGroup;
-			children = (
-				59D3BFEB15164C350093A141 /* .gitignore */,
-				59D3BFEC15164C350093A141 /* autogen.sh */,
-				59D3BFED15164C350093A141 /* bin */,
-				59D3BFEF15164C350093A141 /* ChangeLog */,
-				59D3BFF015164C350093A141 /* config.guess */,
-				59D3BFF115164C350093A141 /* config.stamp.in */,
-				59D3BFF215164C350093A141 /* config.sub */,
-				59D3BFF315164C350093A141 /* configure.ac */,
-				59D3BFF415164C350093A141 /* COPYING */,
-				59D3BFF515164C350093A141 /* doc */,
-				59D3BFFA15164C350093A141 /* include */,
-				59D3C01915164C350093A141 /* INSTALL */,
-				59D3C01A15164C350093A141 /* install-sh */,
-				59D3C01B15164C350093A141 /* Makefile.in */,
-				59D3C01C15164C350093A141 /* README */,
-				59D3C01D15164C350093A141 /* src */,
-				59D3C03315164C350093A141 /* test */,
-			);
-			path = jemalloc;
-			sourceTree = "<group>";
-		};
-		59D3BFED15164C350093A141 /* bin */ = {
-			isa = PBXGroup;
-			children = (
-				59D3BFEE15164C350093A141 /* pprof */,
-			);
-			path = bin;
-			sourceTree = "<group>";
-		};
-		59D3BFF515164C350093A141 /* doc */ = {
-			isa = PBXGroup;
-			children = (
-				59D3BFF615164C350093A141 /* html.xsl.in */,
-				59D3BFF715164C350093A141 /* jemalloc.xml.in */,
-				59D3BFF815164C350093A141 /* manpages.xsl.in */,
-				59D3BFF915164C350093A141 /* stylesheet.xsl */,
-			);
-			path = doc;
-			sourceTree = "<group>";
-		};
-		59D3BFFA15164C350093A141 /* include */ = {
-			isa = PBXGroup;
-			children = (
-				59D3BFFB15164C350093A141 /* jemalloc */,
-			);
-			path = include;
-			sourceTree = "<group>";
-		};
-		59D3BFFB15164C350093A141 /* jemalloc */ = {
-			isa = PBXGroup;
-			children = (
-				59D3BFFC15164C350093A141 /* internal */,
-				59D3C01715164C350093A141 /* jemalloc.h.in */,
-				59D3C01815164C350093A141 /* jemalloc_defs.h.in */,
-			);
-			path = jemalloc;
-			sourceTree = "<group>";
-		};
-		59D3BFFC15164C350093A141 /* internal */ = {
-			isa = PBXGroup;
-			children = (
-				59D3BFFD15164C350093A141 /* arena.h */,
-				59D3BFFE15164C350093A141 /* atomic.h */,
-				59D3BFFF15164C350093A141 /* base.h */,
-				59D3C00015164C350093A141 /* bitmap.h */,
-				59D3C00115164C350093A141 /* chunk.h */,
-				59D3C00215164C350093A141 /* chunk_dss.h */,
-				59D3C00315164C350093A141 /* chunk_mmap.h */,
-				59D3C00415164C350093A141 /* chunk_swap.h */,
-				59D3C00515164C350093A141 /* ckh.h */,
-				59D3C00615164C350093A141 /* ctl.h */,
-				59D3C00715164C350093A141 /* extent.h */,
-				59D3C00815164C350093A141 /* hash.h */,
-				59D3C00915164C350093A141 /* huge.h */,
-				59D3C00A15164C350093A141 /* jemalloc_internal.h.in */,
-				59D3C00B15164C350093A141 /* mb.h */,
-				59D3C00C15164C350093A141 /* mutex.h */,
-				59D3C00D15164C350093A141 /* private_namespace.h */,
-				59D3C00E15164C350093A141 /* prng.h */,
-				59D3C00F15164C350093A141 /* prof.h */,
-				59D3C01015164C350093A141 /* ql.h */,
-				59D3C01115164C350093A141 /* qr.h */,
-				59D3C01215164C350093A141 /* rb.h */,
-				59D3C01315164C350093A141 /* rtree.h */,
-				59D3C01415164C350093A141 /* stats.h */,
-				59D3C01515164C350093A141 /* tcache.h */,
-				59D3C01615164C350093A141 /* zone.h */,
-			);
-			path = internal;
-			sourceTree = "<group>";
-		};
-		59D3C01D15164C350093A141 /* src */ = {
-			isa = PBXGroup;
-			children = (
-				59D3C01E15164C350093A141 /* arena.c */,
-				59D3C01F15164C350093A141 /* atomic.c */,
-				59D3C02015164C350093A141 /* base.c */,
-				59D3C02115164C350093A141 /* bitmap.c */,
-				59D3C02215164C350093A141 /* chunk.c */,
-				59D3C02315164C350093A141 /* chunk_dss.c */,
-				59D3C02415164C350093A141 /* chunk_mmap.c */,
-				59D3C02515164C350093A141 /* chunk_swap.c */,
-				59D3C02615164C350093A141 /* ckh.c */,
-				59D3C02715164C350093A141 /* ctl.c */,
-				59D3C02815164C350093A141 /* extent.c */,
-				59D3C02915164C350093A141 /* hash.c */,
-				59D3C02A15164C350093A141 /* huge.c */,
-				59D3C02B15164C350093A141 /* jemalloc.c */,
-				59D3C02C15164C350093A141 /* mb.c */,
-				59D3C02D15164C350093A141 /* mutex.c */,
-				59D3C02E15164C350093A141 /* prof.c */,
-				59D3C02F15164C350093A141 /* rtree.c */,
-				59D3C03015164C350093A141 /* stats.c */,
-				59D3C03115164C350093A141 /* tcache.c */,
-				59D3C03215164C350093A141 /* zone.c */,
-			);
-			path = src;
-			sourceTree = "<group>";
-		};
-		59D3C03315164C350093A141 /* test */ = {
-			isa = PBXGroup;
-			children = (
-				59D3C03415164C350093A141 /* allocated.c */,
-				59D3C03515164C350093A141 /* allocated.exp */,
-				59D3C03615164C350093A141 /* allocm.c */,
-				59D3C03715164C350093A141 /* allocm.exp */,
-				59D3C03815164C350093A141 /* bitmap.c */,
-				59D3C03915164C350093A141 /* bitmap.exp */,
-				59D3C03A15164C350093A141 /* jemalloc_test.h.in */,
-				59D3C03B15164C350093A141 /* mremap.c */,
-				59D3C03C15164C350093A141 /* mremap.exp */,
-				59D3C03D15164C350093A141 /* posix_memalign.c */,
-				59D3C03E15164C350093A141 /* posix_memalign.exp */,
-				59D3C03F15164C350093A141 /* rallocm.c */,
-				59D3C04015164C350093A141 /* rallocm.exp */,
-				59D3C04115164C350093A141 /* thread_arena.c */,
-				59D3C04215164C350093A141 /* thread_arena.exp */,
 			);
 			path = test;
 			sourceTree = "<group>";
@@ -1864,7 +1678,34 @@
 		};
 /* End PBXGroup section */
 
+/* Begin PBXHeadersBuildPhase section */
+		597B153E1516769F00229222 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
 /* Begin PBXNativeTarget section */
+		597B153F1516769F00229222 /* jemalloc */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 597B15411516769F00229222 /* Build configuration list for PBXNativeTarget "jemalloc" */;
+			buildPhases = (
+				597B153C1516769F00229222 /* Sources */,
+				597B153D1516769F00229222 /* Frameworks */,
+				597B153E1516769F00229222 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = jemalloc;
+			productName = "jemalloc-moz";
+			productReference = 597B15401516769F00229222 /* libjemalloc.a */;
+			productType = "com.apple.product-type.library.static";
+		};
 		59D3BFD615164B6B0093A141 /* uv-testbed */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 59D3BFE115164B6B0093A141 /* Build configuration list for PBXNativeTarget "uv-testbed" */;
@@ -1895,21 +1736,6 @@
 			name = libuv;
 			productName = uv;
 			productReference = 59D3C3C115164F1D0093A141 /* uv.a */;
-			productType = "com.apple.product-type.library.static";
-		};
-		59D3C3CC151651500093A141 /* jemalloc */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 59D3C3CE151651500093A141 /* Build configuration list for PBXNativeTarget "jemalloc" */;
-			buildPhases = (
-				59D3C3D1151651610093A141 /* ShellScript */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-			);
-			name = jemalloc;
-			productName = jemalloc;
-			productReference = 59D3C3CD151651500093A141 /* libjemalloc.a */;
 			productType = "com.apple.product-type.library.static";
 		};
 		59D3C3D5151652AD0093A141 /* zlib */ = {
@@ -1950,8 +1776,8 @@
 			targets = (
 				59D3BFD615164B6B0093A141 /* uv-testbed */,
 				59D3C3C015164F1D0093A141 /* libuv */,
-				59D3C3CC151651500093A141 /* jemalloc */,
 				59D3C3D5151652AD0093A141 /* zlib */,
+				597B153F1516769F00229222 /* jemalloc */,
 			);
 		};
 /* End PBXProject section */
@@ -1970,19 +1796,6 @@
 			shellPath = /bin/sh;
 			shellScript = "cd ${PROJECT_DIR}/deps/${TARGET_NAME}\nmake\nmkdir -p ${TARGET_BUILD_DIR}\ncp ${PROJECT_DIR}/deps/${TARGET_NAME}/uv.a ${TARGET_BUILD_DIR}/uv.a";
 		};
-		59D3C3D1151651610093A141 /* ShellScript */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "cd ${PROJECT_DIR}/deps/${TARGET_NAME}\n[ -f configure ] || autoconf\n[ -f config.status ] || ./configure\nmake\nmkdir -p ${TARGET_BUILD_DIR}\ncp ${PROJECT_DIR}/deps/${TARGET_NAME}/lib/libjemalloc.a ${TARGET_BUILD_DIR}/libjemalloc.a";
-		};
 		59D3C3DB1516532A0093A141 /* ShellScript */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -1999,6 +1812,14 @@
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		597B153C1516769F00229222 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				597B1544151676A300229222 /* jemalloc.c in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		59D3BFD315164B6B0093A141 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -2010,6 +1831,30 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin XCBuildConfiguration section */
+		597B15421516769F00229222 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				EXECUTABLE_PREFIX = lib;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					MOZ_MEMORY,
+					MOZ_MEMORY_DARWIN,
+				);
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		597B15431516769F00229222 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				EXECUTABLE_PREFIX = lib;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					MOZ_MEMORY,
+					MOZ_MEMORY_DARWIN,
+				);
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
 		59D3BFDF15164B6B0093A141 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -2097,22 +1942,6 @@
 			};
 			name = Release;
 		};
-		59D3C3CF151651500093A141 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				EXECUTABLE_PREFIX = lib;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-			};
-			name = Debug;
-		};
-		59D3C3D0151651500093A141 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				EXECUTABLE_PREFIX = lib;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-			};
-			name = Release;
-		};
 		59D3C3D8151652AD0093A141 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -2132,6 +1961,14 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		597B15411516769F00229222 /* Build configuration list for PBXNativeTarget "jemalloc" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				597B15421516769F00229222 /* Debug */,
+				597B15431516769F00229222 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
 		59D3BFD115164B6B0093A141 /* Build configuration list for PBXProject "uv-testbed" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
@@ -2148,6 +1985,7 @@
 				59D3BFE315164B6B0093A141 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		59D3C3C215164F1D0093A141 /* Build configuration list for PBXNativeTarget "libuv" */ = {
 			isa = XCConfigurationList;
@@ -2156,14 +1994,7 @@
 				59D3C3C415164F1D0093A141 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
-		};
-		59D3C3CE151651500093A141 /* Build configuration list for PBXNativeTarget "jemalloc" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				59D3C3CF151651500093A141 /* Debug */,
-				59D3C3D0151651500093A141 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		59D3C3D7151652AD0093A141 /* Build configuration list for PBXNativeTarget "zlib" */ = {
 			isa = XCConfigurationList;
@@ -2172,6 +2003,7 @@
 				59D3C3D9151652AD0093A141 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

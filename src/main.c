@@ -22,7 +22,7 @@ static void _thread_entry( void * arg ) {
   uv_timer_t timer;
   uv_async_t * async = arg;
   uv_timer_init( loop, &timer );
-  uv_timer_start( &timer, &_timer_callback, 1000, 1000 );
+  uv_timer_start( &timer, &_timer_callback, 1000, 500 );
   
   printf( "I'm in a thread!\n" );
   
