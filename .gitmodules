@@ -1,0 +1,9 @@
+[submodule "deps/zlib"]
+	path = deps/zlib
+	url = https://github.com/madler/zlib.git
+[submodule "deps/libuv"]
+	path = deps/libuv
+	url = https://github.com/joyent/libuv.git
+[submodule "deps/jemalloc"]
+	path = deps/jemalloc
+	url = https://github.com/khuey/mozilla-jemalloc.git
