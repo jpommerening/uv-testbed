@@ -649,6 +649,7 @@
 		59D3C3C115164F1D0093A141 /* uv.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = uv.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		59D3C3CD151651500093A141 /* libjemalloc.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libjemalloc.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		59D3C3D6151652AD0093A141 /* libz.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libz.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		59D3C3DF151654860093A141 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = README.md; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -669,6 +670,7 @@
 			isa = PBXGroup;
 			children = (
 				59D3BFE615164BB10093A141 /* Makefile */,
+				59D3C3DF151654860093A141 /* README.md */,
 				59D3BFE415164BB10093A141 /* deps */,
 				59D3BFE515164BB10093A141 /* include */,
 				59D3BFE715164BB10093A141 /* src */,
