@@ -39,6 +39,7 @@
 		597B15401516769F00229222 /* libjemalloc.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libjemalloc.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		597B154615167ACE00229222 /* COPYING.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = COPYING.md; sourceTree = "<group>"; };
 		597B154715167ACE00229222 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = README.md; sourceTree = "<group>"; };
+		597B15481516911700229222 /* jemalloc_config.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = jemalloc_config.h; sourceTree = "<group>"; };
 		59D3BFD715164B6B0093A141 /* uv-testbed */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = "uv-testbed"; sourceTree = BUILT_PRODUCTS_DIR; };
 		59D3BFE615164BB10093A141 /* Makefile */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.make; path = Makefile; sourceTree = "<group>"; };
 		59D3C04415164C350093A141 /* .gitignore */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = .gitignore; sourceTree = "<group>"; };
@@ -611,6 +612,7 @@
 				597B154615167ACE00229222 /* COPYING.md */,
 				597B154715167ACE00229222 /* README.md */,
 				597B15331516768300229222 /* jemalloc.c */,
+				597B15481516911700229222 /* jemalloc_config.h */,
 				597B15341516768300229222 /* jemalloc.h */,
 				597B15351516768300229222 /* jemalloc_types.h */,
 				597B15361516768300229222 /* linkedlist.h */,
@@ -1835,10 +1837,6 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				EXECUTABLE_PREFIX = lib;
-				GCC_PREPROCESSOR_DEFINITIONS = (
-					MOZ_MEMORY,
-					MOZ_MEMORY_DARWIN,
-				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Debug;
@@ -1847,10 +1845,6 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				EXECUTABLE_PREFIX = lib;
-				GCC_PREPROCESSOR_DEFINITIONS = (
-					MOZ_MEMORY,
-					MOZ_MEMORY_DARWIN,
-				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Release;
