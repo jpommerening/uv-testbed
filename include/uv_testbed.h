@@ -1,5 +1,5 @@
-#ifndef uv_testbed_uv_testbed_h
-#define uv_testbed_uv_testbed_h
+#ifndef UV_TESTBED__H
+#define UV_TESTBED__H
 
 #define UV_TESTBED_VERSION 0.0.1
 

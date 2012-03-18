@@ -10,3 +10,5 @@ What's inside?
 * jemalloc (because most libc implementations don't perform as well, source: [khuey/mozilla-jemalloc](https://github.com/khuey/mozilla-jemalloc))
 * zlib (because small things are nice, source: [madler/zlib](https://github.com/madler/zlib "github: madler/zlib"))
 * A Makefile and an XCode-project to tie it all together
+
+All libs are linked statically to be embedded inside the application.

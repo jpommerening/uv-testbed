@@ -9,7 +9,6 @@
 /* Begin PBXBuildFile section */
 		59D3C3BB15164D450093A141 /* main.c in Sources */ = {isa = PBXBuildFile; fileRef = 59D3C3BA15164D450093A141 /* main.c */; };
 		59D3C3DC151653700093A141 /* uv.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 59D3C3C115164F1D0093A141 /* uv.a */; };
-		59D3C3DD151653740093A141 /* libjemalloc.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 59D3C3CD151651500093A141 /* libjemalloc.a */; };
 		59D3C3DE151653780093A141 /* libz.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 59D3C3D6151652AD0093A141 /* libz.a */; };
 /* End PBXBuildFile section */
 
@@ -658,7 +657,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				59D3C3DC151653700093A141 /* uv.a in Frameworks */,
-				59D3C3DD151653740093A141 /* libjemalloc.a in Frameworks */,
 				59D3C3DE151653780093A141 /* libz.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
