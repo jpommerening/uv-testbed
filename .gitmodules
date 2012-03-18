@@ -6,4 +6,4 @@
 	url = https://github.com/joyent/libuv.git
 [submodule "deps/jemalloc"]
 	path = deps/jemalloc
-	url = https://github.com/khuey/mozilla-jemalloc.git
+	url = https://github.com/jpommerening/jemalloc-mozilla.git
