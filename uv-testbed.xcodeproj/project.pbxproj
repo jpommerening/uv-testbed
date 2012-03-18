@@ -7,301 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		59D3BFE915164BB10093A141 /* Makefile in Sources */ = {isa = PBXBuildFile; fileRef = 59D3BFE615164BB10093A141 /* Makefile */; };
-		59D3C29415164C350093A141 /* arena.c in Sources */ = {isa = PBXBuildFile; fileRef = 59D3C01E15164C350093A141 /* arena.c */; };
-		59D3C29515164C350093A141 /* atomic.c in Sources */ = {isa = PBXBuildFile; fileRef = 59D3C01F15164C350093A141 /* atomic.c */; };
-		59D3C29615164C350093A141 /* base.c in Sources */ = {isa = PBXBuildFile; fileRef = 59D3C02015164C350093A141 /* base.c */; };
-		59D3C29715164C350093A141 /* bitmap.c in Sources */ = {isa = PBXBuildFile; fileRef = 59D3C02115164C350093A141 /* bitmap.c */; };
-		59D3C29815164C350093A141 /* chunk.c in Sources */ = {isa = PBXBuildFile; fileRef = 59D3C02215164C350093A141 /* chunk.c */; };
-		59D3C29915164C350093A141 /* chunk_dss.c in Sources */ = {isa = PBXBuildFile; fileRef = 59D3C02315164C350093A141 /* chunk_dss.c */; };
-		59D3C29A15164C350093A141 /* chunk_mmap.c in Sources */ = {isa = PBXBuildFile; fileRef = 59D3C02415164C350093A141 /* chunk_mmap.c */; };
-		59D3C29B15164C350093A141 /* chunk_swap.c in Sources */ = {isa = PBXBuildFile; fileRef = 59D3C02515164C350093A141 /* chunk_swap.c */; };
-		59D3C29C15164C350093A141 /* ckh.c in Sources */ = {isa = PBXBuildFile; fileRef = 59D3C02615164C350093A141 /* ckh.c */; };
-		59D3C29D15164C350093A141 /* ctl.c in Sources */ = {isa = PBXBuildFile; fileRef = 59D3C02715164C350093A141 /* ctl.c */; };
-		59D3C29E15164C350093A141 /* extent.c in Sources */ = {isa = PBXBuildFile; fileRef = 59D3C02815164C350093A141 /* extent.c */; };
-		59D3C29F15164C350093A141 /* hash.c in Sources */ = {isa = PBXBuildFile; fileRef = 59D3C02915164C350093A141 /* hash.c */; };
-		59D3C2A015164C350093A141 /* huge.c in Sources */ = {isa = PBXBuildFile; fileRef = 59D3C02A15164C350093A141 /* huge.c */; };
-		59D3C2A115164C350093A141 /* jemalloc.c in Sources */ = {isa = PBXBuildFile; fileRef = 59D3C02B15164C350093A141 /* jemalloc.c */; };
-		59D3C2A215164C350093A141 /* mb.c in Sources */ = {isa = PBXBuildFile; fileRef = 59D3C02C15164C350093A141 /* mb.c */; };
-		59D3C2A315164C350093A141 /* mutex.c in Sources */ = {isa = PBXBuildFile; fileRef = 59D3C02D15164C350093A141 /* mutex.c */; };
-		59D3C2A415164C350093A141 /* prof.c in Sources */ = {isa = PBXBuildFile; fileRef = 59D3C02E15164C350093A141 /* prof.c */; };
-		59D3C2A515164C350093A141 /* rtree.c in Sources */ = {isa = PBXBuildFile; fileRef = 59D3C02F15164C350093A141 /* rtree.c */; };
-		59D3C2A615164C350093A141 /* stats.c in Sources */ = {isa = PBXBuildFile; fileRef = 59D3C03015164C350093A141 /* stats.c */; };
-		59D3C2A715164C350093A141 /* tcache.c in Sources */ = {isa = PBXBuildFile; fileRef = 59D3C03115164C350093A141 /* tcache.c */; };
-		59D3C2A815164C350093A141 /* zone.c in Sources */ = {isa = PBXBuildFile; fileRef = 59D3C03215164C350093A141 /* zone.c */; };
-		59D3C2A915164C350093A141 /* allocated.c in Sources */ = {isa = PBXBuildFile; fileRef = 59D3C03415164C350093A141 /* allocated.c */; };
-		59D3C2AA15164C350093A141 /* allocated.exp in Sources */ = {isa = PBXBuildFile; fileRef = 59D3C03515164C350093A141 /* allocated.exp */; };
-		59D3C2AB15164C350093A141 /* allocm.c in Sources */ = {isa = PBXBuildFile; fileRef = 59D3C03615164C350093A141 /* allocm.c */; };
-		59D3C2AC15164C350093A141 /* allocm.exp in Sources */ = {isa = PBXBuildFile; fileRef = 59D3C03715164C350093A141 /* allocm.exp */; };
-		59D3C2AD15164C350093A141 /* bitmap.c in Sources */ = {isa = PBXBuildFile; fileRef = 59D3C03815164C350093A141 /* bitmap.c */; };
-		59D3C2AE15164C350093A141 /* bitmap.exp in Sources */ = {isa = PBXBuildFile; fileRef = 59D3C03915164C350093A141 /* bitmap.exp */; };
-		59D3C2AF15164C350093A141 /* mremap.c in Sources */ = {isa = PBXBuildFile; fileRef = 59D3C03B15164C350093A141 /* mremap.c */; };
-		59D3C2B015164C350093A141 /* mremap.exp in Sources */ = {isa = PBXBuildFile; fileRef = 59D3C03C15164C350093A141 /* mremap.exp */; };
-		59D3C2B115164C350093A141 /* posix_memalign.c in Sources */ = {isa = PBXBuildFile; fileRef = 59D3C03D15164C350093A141 /* posix_memalign.c */; };
-		59D3C2B215164C350093A141 /* posix_memalign.exp in Sources */ = {isa = PBXBuildFile; fileRef = 59D3C03E15164C350093A141 /* posix_memalign.exp */; };
-		59D3C2B315164C350093A141 /* rallocm.c in Sources */ = {isa = PBXBuildFile; fileRef = 59D3C03F15164C350093A141 /* rallocm.c */; };
-		59D3C2B415164C350093A141 /* rallocm.exp in Sources */ = {isa = PBXBuildFile; fileRef = 59D3C04015164C350093A141 /* rallocm.exp */; };
-		59D3C2B515164C350093A141 /* thread_arena.c in Sources */ = {isa = PBXBuildFile; fileRef = 59D3C04115164C350093A141 /* thread_arena.c */; };
-		59D3C2B615164C350093A141 /* thread_arena.exp in Sources */ = {isa = PBXBuildFile; fileRef = 59D3C04215164C350093A141 /* thread_arena.exp */; };
-		59D3C2B715164C350093A141 /* Makefile in Sources */ = {isa = PBXBuildFile; fileRef = 59D3C05A15164C350093A141 /* Makefile */; };
-		59D3C2B815164C350093A141 /* ares__close_sockets.c in Sources */ = {isa = PBXBuildFile; fileRef = 59D3C05E15164C350093A141 /* ares__close_sockets.c */; };
-		59D3C2B915164C350093A141 /* ares__get_hostent.c in Sources */ = {isa = PBXBuildFile; fileRef = 59D3C05F15164C350093A141 /* ares__get_hostent.c */; };
-		59D3C2BA15164C350093A141 /* ares__read_line.c in Sources */ = {isa = PBXBuildFile; fileRef = 59D3C06015164C350093A141 /* ares__read_line.c */; };
-		59D3C2BB15164C350093A141 /* ares__timeval.c in Sources */ = {isa = PBXBuildFile; fileRef = 59D3C06115164C350093A141 /* ares__timeval.c */; };
-		59D3C2BC15164C350093A141 /* ares_cancel.c in Sources */ = {isa = PBXBuildFile; fileRef = 59D3C06215164C350093A141 /* ares_cancel.c */; };
-		59D3C2BD15164C350093A141 /* ares_data.c in Sources */ = {isa = PBXBuildFile; fileRef = 59D3C06315164C350093A141 /* ares_data.c */; };
-		59D3C2BE15164C350093A141 /* ares_destroy.c in Sources */ = {isa = PBXBuildFile; fileRef = 59D3C06515164C350093A141 /* ares_destroy.c */; };
-		59D3C2BF15164C350093A141 /* ares_expand_name.c in Sources */ = {isa = PBXBuildFile; fileRef = 59D3C06715164C350093A141 /* ares_expand_name.c */; };
-		59D3C2C015164C350093A141 /* ares_expand_string.c in Sources */ = {isa = PBXBuildFile; fileRef = 59D3C06815164C350093A141 /* ares_expand_string.c */; };
-		59D3C2C115164C350093A141 /* ares_fds.c in Sources */ = {isa = PBXBuildFile; fileRef = 59D3C06915164C350093A141 /* ares_fds.c */; };
-		59D3C2C215164C350093A141 /* ares_free_hostent.c in Sources */ = {isa = PBXBuildFile; fileRef = 59D3C06A15164C350093A141 /* ares_free_hostent.c */; };
-		59D3C2C315164C350093A141 /* ares_free_string.c in Sources */ = {isa = PBXBuildFile; fileRef = 59D3C06B15164C350093A141 /* ares_free_string.c */; };
-		59D3C2C415164C350093A141 /* ares_getenv.c in Sources */ = {isa = PBXBuildFile; fileRef = 59D3C06C15164C350093A141 /* ares_getenv.c */; };
-		59D3C2C515164C350093A141 /* ares_gethostbyaddr.c in Sources */ = {isa = PBXBuildFile; fileRef = 59D3C06E15164C350093A141 /* ares_gethostbyaddr.c */; };
-		59D3C2C615164C350093A141 /* ares_gethostbyname.c in Sources */ = {isa = PBXBuildFile; fileRef = 59D3C06F15164C350093A141 /* ares_gethostbyname.c */; };
-		59D3C2C715164C350093A141 /* ares_getnameinfo.c in Sources */ = {isa = PBXBuildFile; fileRef = 59D3C07015164C350093A141 /* ares_getnameinfo.c */; };
-		59D3C2C815164C350093A141 /* ares_getopt.c in Sources */ = {isa = PBXBuildFile; fileRef = 59D3C07115164C350093A141 /* ares_getopt.c */; };
-		59D3C2C915164C350093A141 /* ares_getsock.c in Sources */ = {isa = PBXBuildFile; fileRef = 59D3C07315164C350093A141 /* ares_getsock.c */; };
-		59D3C2CA15164C350093A141 /* ares_init.c in Sources */ = {isa = PBXBuildFile; fileRef = 59D3C07415164C350093A141 /* ares_init.c */; };
-		59D3C2CB15164C350093A141 /* ares_library_init.c in Sources */ = {isa = PBXBuildFile; fileRef = 59D3C07715164C350093A141 /* ares_library_init.c */; };
-		59D3C2CC15164C350093A141 /* ares_llist.c in Sources */ = {isa = PBXBuildFile; fileRef = 59D3C07915164C350093A141 /* ares_llist.c */; };
-		59D3C2CD15164C350093A141 /* ares_mkquery.c in Sources */ = {isa = PBXBuildFile; fileRef = 59D3C07B15164C350093A141 /* ares_mkquery.c */; };
-		59D3C2CE15164C350093A141 /* ares_nowarn.c in Sources */ = {isa = PBXBuildFile; fileRef = 59D3C07C15164C350093A141 /* ares_nowarn.c */; };
-		59D3C2CF15164C350093A141 /* ares_options.c in Sources */ = {isa = PBXBuildFile; fileRef = 59D3C07E15164C350093A141 /* ares_options.c */; };
-		59D3C2D015164C350093A141 /* ares_parse_a_reply.c in Sources */ = {isa = PBXBuildFile; fileRef = 59D3C07F15164C350093A141 /* ares_parse_a_reply.c */; };
-		59D3C2D115164C350093A141 /* ares_parse_aaaa_reply.c in Sources */ = {isa = PBXBuildFile; fileRef = 59D3C08015164C350093A141 /* ares_parse_aaaa_reply.c */; };
-		59D3C2D215164C350093A141 /* ares_parse_mx_reply.c in Sources */ = {isa = PBXBuildFile; fileRef = 59D3C08115164C350093A141 /* ares_parse_mx_reply.c */; };
-		59D3C2D315164C360093A141 /* ares_parse_ns_reply.c in Sources */ = {isa = PBXBuildFile; fileRef = 59D3C08215164C350093A141 /* ares_parse_ns_reply.c */; };
-		59D3C2D415164C360093A141 /* ares_parse_ptr_reply.c in Sources */ = {isa = PBXBuildFile; fileRef = 59D3C08315164C350093A141 /* ares_parse_ptr_reply.c */; };
-		59D3C2D515164C360093A141 /* ares_parse_srv_reply.c in Sources */ = {isa = PBXBuildFile; fileRef = 59D3C08415164C350093A141 /* ares_parse_srv_reply.c */; };
-		59D3C2D615164C360093A141 /* ares_parse_txt_reply.c in Sources */ = {isa = PBXBuildFile; fileRef = 59D3C08515164C350093A141 /* ares_parse_txt_reply.c */; };
-		59D3C2D715164C360093A141 /* ares_platform.c in Sources */ = {isa = PBXBuildFile; fileRef = 59D3C08615164C350093A141 /* ares_platform.c */; };
-		59D3C2D815164C360093A141 /* ares_process.c in Sources */ = {isa = PBXBuildFile; fileRef = 59D3C08915164C350093A141 /* ares_process.c */; };
-		59D3C2D915164C360093A141 /* ares_query.c in Sources */ = {isa = PBXBuildFile; fileRef = 59D3C08A15164C350093A141 /* ares_query.c */; };
-		59D3C2DA15164C360093A141 /* ares_search.c in Sources */ = {isa = PBXBuildFile; fileRef = 59D3C08C15164C350093A141 /* ares_search.c */; };
-		59D3C2DB15164C360093A141 /* ares_send.c in Sources */ = {isa = PBXBuildFile; fileRef = 59D3C08D15164C350093A141 /* ares_send.c */; };
-		59D3C2DC15164C360093A141 /* ares_strcasecmp.c in Sources */ = {isa = PBXBuildFile; fileRef = 59D3C08F15164C350093A141 /* ares_strcasecmp.c */; };
-		59D3C2DD15164C360093A141 /* ares_strdup.c in Sources */ = {isa = PBXBuildFile; fileRef = 59D3C09115164C350093A141 /* ares_strdup.c */; };
-		59D3C2DE15164C360093A141 /* ares_strerror.c in Sources */ = {isa = PBXBuildFile; fileRef = 59D3C09315164C350093A141 /* ares_strerror.c */; };
-		59D3C2DF15164C360093A141 /* ares_timeout.c in Sources */ = {isa = PBXBuildFile; fileRef = 59D3C09415164C350093A141 /* ares_timeout.c */; };
-		59D3C2E015164C360093A141 /* ares_version.c in Sources */ = {isa = PBXBuildFile; fileRef = 59D3C09515164C350093A141 /* ares_version.c */; };
-		59D3C2E115164C360093A141 /* ares_writev.c in Sources */ = {isa = PBXBuildFile; fileRef = 59D3C09615164C350093A141 /* ares_writev.c */; };
-		59D3C2E215164C360093A141 /* bitncmp.c in Sources */ = {isa = PBXBuildFile; fileRef = 59D3C09915164C350093A141 /* bitncmp.c */; };
-		59D3C2E315164C360093A141 /* inet_net_pton.c in Sources */ = {isa = PBXBuildFile; fileRef = 59D3C0AE15164C350093A141 /* inet_net_pton.c */; };
-		59D3C2E415164C360093A141 /* inet_ntop.c in Sources */ = {isa = PBXBuildFile; fileRef = 59D3C0B015164C350093A141 /* inet_ntop.c */; };
-		59D3C2E515164C360093A141 /* windows_port.c in Sources */ = {isa = PBXBuildFile; fileRef = 59D3C0BB15164C350093A141 /* windows_port.c */; };
-		59D3C2E615164C360093A141 /* cares.c in Sources */ = {isa = PBXBuildFile; fileRef = 59D3C0BD15164C350093A141 /* cares.c */; };
-		59D3C2E715164C360093A141 /* core.c in Sources */ = {isa = PBXBuildFile; fileRef = 59D3C0BE15164C350093A141 /* core.c */; };
-		59D3C2E815164C360093A141 /* cygwin.c in Sources */ = {isa = PBXBuildFile; fileRef = 59D3C0BF15164C350093A141 /* cygwin.c */; };
-		59D3C2E915164C360093A141 /* darwin.c in Sources */ = {isa = PBXBuildFile; fileRef = 59D3C0C015164C350093A141 /* darwin.c */; };
-		59D3C2EA15164C360093A141 /* dl.c in Sources */ = {isa = PBXBuildFile; fileRef = 59D3C0C115164C350093A141 /* dl.c */; };
-		59D3C2EB15164C360093A141 /* demo.c in Sources */ = {isa = PBXBuildFile; fileRef = 59D3C0CF15164C350093A141 /* demo.c */; };
-		59D3C2EC15164C360093A141 /* eio.c in Sources */ = {isa = PBXBuildFile; fileRef = 59D3C0D215164C350093A141 /* eio.c */; };
-		59D3C2ED15164C360093A141 /* error.c in Sources */ = {isa = PBXBuildFile; fileRef = 59D3C0D815164C350093A141 /* error.c */; };
-		59D3C2EE15164C360093A141 /* ev.c in Sources */ = {isa = PBXBuildFile; fileRef = 59D3C0EC15164C350093A141 /* ev.c */; };
-		59D3C2EF15164C360093A141 /* ev_epoll.c in Sources */ = {isa = PBXBuildFile; fileRef = 59D3C0EE15164C350093A141 /* ev_epoll.c */; };
-		59D3C2F015164C360093A141 /* ev_kqueue.c in Sources */ = {isa = PBXBuildFile; fileRef = 59D3C0EF15164C350093A141 /* ev_kqueue.c */; };
-		59D3C2F115164C360093A141 /* ev_poll.c in Sources */ = {isa = PBXBuildFile; fileRef = 59D3C0F015164C350093A141 /* ev_poll.c */; };
-		59D3C2F215164C360093A141 /* ev_port.c in Sources */ = {isa = PBXBuildFile; fileRef = 59D3C0F115164C350093A141 /* ev_port.c */; };
-		59D3C2F315164C360093A141 /* ev_select.c in Sources */ = {isa = PBXBuildFile; fileRef = 59D3C0F215164C350093A141 /* ev_select.c */; };
-		59D3C2F415164C360093A141 /* ev_win32.c in Sources */ = {isa = PBXBuildFile; fileRef = 59D3C0F415164C350093A141 /* ev_win32.c */; };
-		59D3C2F515164C360093A141 /* event.c in Sources */ = {isa = PBXBuildFile; fileRef = 59D3C0F615164C350093A141 /* event.c */; };
-		59D3C2F615164C360093A141 /* freebsd.c in Sources */ = {isa = PBXBuildFile; fileRef = 59D3C10115164C350093A141 /* freebsd.c */; };
-		59D3C2F715164C360093A141 /* fs.c in Sources */ = {isa = PBXBuildFile; fileRef = 59D3C10215164C350093A141 /* fs.c */; };
-		59D3C2F815164C360093A141 /* kqueue.c in Sources */ = {isa = PBXBuildFile; fileRef = 59D3C10415164C350093A141 /* kqueue.c */; };
-		59D3C2F915164C360093A141 /* core.c in Sources */ = {isa = PBXBuildFile; fileRef = 59D3C10615164C350093A141 /* core.c */; };
-		59D3C2FA15164C360093A141 /* inotify.c in Sources */ = {isa = PBXBuildFile; fileRef = 59D3C10715164C350093A141 /* inotify.c */; };
-		59D3C2FB15164C360093A141 /* netbsd.c in Sources */ = {isa = PBXBuildFile; fileRef = 59D3C10815164C350093A141 /* netbsd.c */; };
-		59D3C2FC15164C360093A141 /* openbsd.c in Sources */ = {isa = PBXBuildFile; fileRef = 59D3C10915164C350093A141 /* openbsd.c */; };
-		59D3C2FD15164C360093A141 /* pipe.c in Sources */ = {isa = PBXBuildFile; fileRef = 59D3C10A15164C350093A141 /* pipe.c */; };
-		59D3C2FE15164C360093A141 /* process.c in Sources */ = {isa = PBXBuildFile; fileRef = 59D3C10B15164C350093A141 /* process.c */; };
-		59D3C2FF15164C360093A141 /* stream.c in Sources */ = {isa = PBXBuildFile; fileRef = 59D3C10C15164C350093A141 /* stream.c */; };
-		59D3C30015164C360093A141 /* sunos.c in Sources */ = {isa = PBXBuildFile; fileRef = 59D3C10D15164C350093A141 /* sunos.c */; };
-		59D3C30115164C360093A141 /* tcp.c in Sources */ = {isa = PBXBuildFile; fileRef = 59D3C10E15164C350093A141 /* tcp.c */; };
-		59D3C30215164C360093A141 /* thread.c in Sources */ = {isa = PBXBuildFile; fileRef = 59D3C10F15164C350093A141 /* thread.c */; };
-		59D3C30315164C360093A141 /* tty.c in Sources */ = {isa = PBXBuildFile; fileRef = 59D3C11015164C350093A141 /* tty.c */; };
-		59D3C30415164C360093A141 /* udp.c in Sources */ = {isa = PBXBuildFile; fileRef = 59D3C11115164C350093A141 /* udp.c */; };
-		59D3C30515164C360093A141 /* uv-eio.c in Sources */ = {isa = PBXBuildFile; fileRef = 59D3C11215164C350093A141 /* uv-eio.c */; };
-		59D3C30615164C360093A141 /* uv-common.c in Sources */ = {isa = PBXBuildFile; fileRef = 59D3C11415164C350093A141 /* uv-common.c */; };
-		59D3C30715164C360093A141 /* async.c in Sources */ = {isa = PBXBuildFile; fileRef = 59D3C11715164C350093A141 /* async.c */; };
-		59D3C30815164C360093A141 /* cares.c in Sources */ = {isa = PBXBuildFile; fileRef = 59D3C11815164C350093A141 /* cares.c */; };
-		59D3C30915164C360093A141 /* core.c in Sources */ = {isa = PBXBuildFile; fileRef = 59D3C11915164C350093A141 /* core.c */; };
-		59D3C30A15164C360093A141 /* dl.c in Sources */ = {isa = PBXBuildFile; fileRef = 59D3C11A15164C350093A141 /* dl.c */; };
-		59D3C30B15164C360093A141 /* error.c in Sources */ = {isa = PBXBuildFile; fileRef = 59D3C11B15164C350093A141 /* error.c */; };
-		59D3C30C15164C360093A141 /* fs-event.c in Sources */ = {isa = PBXBuildFile; fileRef = 59D3C11C15164C350093A141 /* fs-event.c */; };
-		59D3C30D15164C360093A141 /* fs.c in Sources */ = {isa = PBXBuildFile; fileRef = 59D3C11D15164C350093A141 /* fs.c */; };
-		59D3C30E15164C360093A141 /* getaddrinfo.c in Sources */ = {isa = PBXBuildFile; fileRef = 59D3C11E15164C350093A141 /* getaddrinfo.c */; };
-		59D3C30F15164C360093A141 /* handle.c in Sources */ = {isa = PBXBuildFile; fileRef = 59D3C11F15164C350093A141 /* handle.c */; };
-		59D3C31015164C360093A141 /* loop-watcher.c in Sources */ = {isa = PBXBuildFile; fileRef = 59D3C12115164C350093A141 /* loop-watcher.c */; };
-		59D3C31115164C360093A141 /* pipe.c in Sources */ = {isa = PBXBuildFile; fileRef = 59D3C12215164C350093A141 /* pipe.c */; };
-		59D3C31215164C360093A141 /* process.c in Sources */ = {isa = PBXBuildFile; fileRef = 59D3C12315164C350093A141 /* process.c */; };
-		59D3C31315164C360093A141 /* req.c in Sources */ = {isa = PBXBuildFile; fileRef = 59D3C12415164C350093A141 /* req.c */; };
-		59D3C31415164C360093A141 /* stream.c in Sources */ = {isa = PBXBuildFile; fileRef = 59D3C12515164C350093A141 /* stream.c */; };
-		59D3C31515164C360093A141 /* tcp.c in Sources */ = {isa = PBXBuildFile; fileRef = 59D3C12615164C350093A141 /* tcp.c */; };
-		59D3C31615164C360093A141 /* thread.c in Sources */ = {isa = PBXBuildFile; fileRef = 59D3C12715164C350093A141 /* thread.c */; };
-		59D3C31715164C360093A141 /* threadpool.c in Sources */ = {isa = PBXBuildFile; fileRef = 59D3C12815164C350093A141 /* threadpool.c */; };
-		59D3C31815164C360093A141 /* timer.c in Sources */ = {isa = PBXBuildFile; fileRef = 59D3C12915164C350093A141 /* timer.c */; };
-		59D3C31915164C360093A141 /* tty.c in Sources */ = {isa = PBXBuildFile; fileRef = 59D3C12A15164C350093A141 /* tty.c */; };
-		59D3C31A15164C360093A141 /* udp.c in Sources */ = {isa = PBXBuildFile; fileRef = 59D3C12B15164C350093A141 /* udp.c */; };
-		59D3C31B15164C360093A141 /* util.c in Sources */ = {isa = PBXBuildFile; fileRef = 59D3C12C15164C350093A141 /* util.c */; };
-		59D3C31C15164C360093A141 /* winapi.c in Sources */ = {isa = PBXBuildFile; fileRef = 59D3C12D15164C350093A141 /* winapi.c */; };
-		59D3C31D15164C360093A141 /* winsock.c in Sources */ = {isa = PBXBuildFile; fileRef = 59D3C12F15164C350093A141 /* winsock.c */; };
-		59D3C31E15164C360093A141 /* benchmark-ares.c in Sources */ = {isa = PBXBuildFile; fileRef = 59D3C13215164C350093A141 /* benchmark-ares.c */; };
-		59D3C31F15164C360093A141 /* benchmark-getaddrinfo.c in Sources */ = {isa = PBXBuildFile; fileRef = 59D3C13315164C350093A141 /* benchmark-getaddrinfo.c */; };
-		59D3C32015164C360093A141 /* benchmark-ping-pongs.c in Sources */ = {isa = PBXBuildFile; fileRef = 59D3C13515164C350093A141 /* benchmark-ping-pongs.c */; };
-		59D3C32115164C360093A141 /* benchmark-pound.c in Sources */ = {isa = PBXBuildFile; fileRef = 59D3C13615164C350093A141 /* benchmark-pound.c */; };
-		59D3C32215164C360093A141 /* benchmark-pump.c in Sources */ = {isa = PBXBuildFile; fileRef = 59D3C13715164C350093A141 /* benchmark-pump.c */; };
-		59D3C32315164C360093A141 /* benchmark-sizes.c in Sources */ = {isa = PBXBuildFile; fileRef = 59D3C13815164C350093A141 /* benchmark-sizes.c */; };
-		59D3C32415164C360093A141 /* benchmark-spawn.c in Sources */ = {isa = PBXBuildFile; fileRef = 59D3C13915164C350093A141 /* benchmark-spawn.c */; };
-		59D3C32515164C360093A141 /* benchmark-tcp-write-batch.c in Sources */ = {isa = PBXBuildFile; fileRef = 59D3C13A15164C350093A141 /* benchmark-tcp-write-batch.c */; };
-		59D3C32615164C360093A141 /* benchmark-thread.c in Sources */ = {isa = PBXBuildFile; fileRef = 59D3C13B15164C350093A141 /* benchmark-thread.c */; };
-		59D3C32715164C360093A141 /* benchmark-udp-packet-storm.c in Sources */ = {isa = PBXBuildFile; fileRef = 59D3C13C15164C350093A141 /* benchmark-udp-packet-storm.c */; };
-		59D3C32815164C360093A141 /* blackhole-server.c in Sources */ = {isa = PBXBuildFile; fileRef = 59D3C13D15164C350093A141 /* blackhole-server.c */; };
-		59D3C32915164C360093A141 /* dns-server.c in Sources */ = {isa = PBXBuildFile; fileRef = 59D3C13E15164C350093A141 /* dns-server.c */; };
-		59D3C32A15164C360093A141 /* echo-server.c in Sources */ = {isa = PBXBuildFile; fileRef = 59D3C13F15164C350093A141 /* echo-server.c */; };
-		59D3C32B15164C360093A141 /* run-benchmarks.c in Sources */ = {isa = PBXBuildFile; fileRef = 59D3C14315164C350093A141 /* run-benchmarks.c */; };
-		59D3C32C15164C360093A141 /* run-tests.c in Sources */ = {isa = PBXBuildFile; fileRef = 59D3C14415164C350093A141 /* run-tests.c */; };
-		59D3C32D15164C360093A141 /* runner-unix.c in Sources */ = {isa = PBXBuildFile; fileRef = 59D3C14515164C350093A141 /* runner-unix.c */; };
-		59D3C32E15164C360093A141 /* runner-win.c in Sources */ = {isa = PBXBuildFile; fileRef = 59D3C14715164C350093A141 /* runner-win.c */; };
-		59D3C32F15164C360093A141 /* runner.c in Sources */ = {isa = PBXBuildFile; fileRef = 59D3C14915164C350093A141 /* runner.c */; };
-		59D3C33015164C360093A141 /* test-async.c in Sources */ = {isa = PBXBuildFile; fileRef = 59D3C14C15164C350093A141 /* test-async.c */; };
-		59D3C33115164C360093A141 /* test-callback-stack.c in Sources */ = {isa = PBXBuildFile; fileRef = 59D3C14D15164C350093A141 /* test-callback-stack.c */; };
-		59D3C33215164C360093A141 /* test-connection-fail.c in Sources */ = {isa = PBXBuildFile; fileRef = 59D3C14E15164C350093A141 /* test-connection-fail.c */; };
-		59D3C33315164C360093A141 /* test-counters-init.c in Sources */ = {isa = PBXBuildFile; fileRef = 59D3C14F15164C350093A141 /* test-counters-init.c */; };
-		59D3C33415164C360093A141 /* test-cwd-and-chdir.c in Sources */ = {isa = PBXBuildFile; fileRef = 59D3C15015164C350093A141 /* test-cwd-and-chdir.c */; };
-		59D3C33515164C360093A141 /* test-delayed-accept.c in Sources */ = {isa = PBXBuildFile; fileRef = 59D3C15115164C350093A141 /* test-delayed-accept.c */; };
-		59D3C33615164C360093A141 /* test-dlerror.c in Sources */ = {isa = PBXBuildFile; fileRef = 59D3C15215164C350093A141 /* test-dlerror.c */; };
-		59D3C33715164C360093A141 /* test-eio-overflow.c in Sources */ = {isa = PBXBuildFile; fileRef = 59D3C15315164C350093A141 /* test-eio-overflow.c */; };
-		59D3C33815164C360093A141 /* test-error.c in Sources */ = {isa = PBXBuildFile; fileRef = 59D3C15415164C350093A141 /* test-error.c */; };
-		59D3C33915164C360093A141 /* test-fail-always.c in Sources */ = {isa = PBXBuildFile; fileRef = 59D3C15515164C350093A141 /* test-fail-always.c */; };
-		59D3C33A15164C360093A141 /* test-fs-event.c in Sources */ = {isa = PBXBuildFile; fileRef = 59D3C15615164C350093A141 /* test-fs-event.c */; };
-		59D3C33B15164C360093A141 /* test-fs.c in Sources */ = {isa = PBXBuildFile; fileRef = 59D3C15715164C350093A141 /* test-fs.c */; };
-		59D3C33C15164C360093A141 /* test-get-currentexe.c in Sources */ = {isa = PBXBuildFile; fileRef = 59D3C15815164C350093A141 /* test-get-currentexe.c */; };
-		59D3C33D15164C360093A141 /* test-get-loadavg.c in Sources */ = {isa = PBXBuildFile; fileRef = 59D3C15915164C350093A141 /* test-get-loadavg.c */; };
-		59D3C33E15164C360093A141 /* test-get-memory.c in Sources */ = {isa = PBXBuildFile; fileRef = 59D3C15A15164C350093A141 /* test-get-memory.c */; };
-		59D3C33F15164C360093A141 /* test-getaddrinfo.c in Sources */ = {isa = PBXBuildFile; fileRef = 59D3C15B15164C350093A141 /* test-getaddrinfo.c */; };
-		59D3C34015164C360093A141 /* test-gethostbyname.c in Sources */ = {isa = PBXBuildFile; fileRef = 59D3C15C15164C350093A141 /* test-gethostbyname.c */; };
-		59D3C34115164C360093A141 /* test-getsockname.c in Sources */ = {isa = PBXBuildFile; fileRef = 59D3C15D15164C350093A141 /* test-getsockname.c */; };
-		59D3C34215164C360093A141 /* test-hrtime.c in Sources */ = {isa = PBXBuildFile; fileRef = 59D3C15E15164C350093A141 /* test-hrtime.c */; };
-		59D3C34315164C360093A141 /* test-idle.c in Sources */ = {isa = PBXBuildFile; fileRef = 59D3C15F15164C350093A141 /* test-idle.c */; };
-		59D3C34415164C360093A141 /* test-ipc-send-recv.c in Sources */ = {isa = PBXBuildFile; fileRef = 59D3C16015164C350093A141 /* test-ipc-send-recv.c */; };
-		59D3C34515164C360093A141 /* test-ipc.c in Sources */ = {isa = PBXBuildFile; fileRef = 59D3C16115164C350093A141 /* test-ipc.c */; };
-		59D3C34615164C360093A141 /* test-loop-handles.c in Sources */ = {isa = PBXBuildFile; fileRef = 59D3C16315164C350093A141 /* test-loop-handles.c */; };
-		59D3C34715164C360093A141 /* test-multiple-listen.c in Sources */ = {isa = PBXBuildFile; fileRef = 59D3C16415164C350093A141 /* test-multiple-listen.c */; };
-		59D3C34815164C360093A141 /* test-mutexes.c in Sources */ = {isa = PBXBuildFile; fileRef = 59D3C16515164C350093A141 /* test-mutexes.c */; };
-		59D3C34915164C360093A141 /* test-pass-always.c in Sources */ = {isa = PBXBuildFile; fileRef = 59D3C16615164C350093A141 /* test-pass-always.c */; };
-		59D3C34A15164C360093A141 /* test-ping-pong.c in Sources */ = {isa = PBXBuildFile; fileRef = 59D3C16715164C350093A141 /* test-ping-pong.c */; };
-		59D3C34B15164C360093A141 /* test-pipe-bind-error.c in Sources */ = {isa = PBXBuildFile; fileRef = 59D3C16815164C350093A141 /* test-pipe-bind-error.c */; };
-		59D3C34C15164C360093A141 /* test-pipe-connect-error.c in Sources */ = {isa = PBXBuildFile; fileRef = 59D3C16915164C350093A141 /* test-pipe-connect-error.c */; };
-		59D3C34D15164C360093A141 /* test-platform-output.c in Sources */ = {isa = PBXBuildFile; fileRef = 59D3C16A15164C350093A141 /* test-platform-output.c */; };
-		59D3C34E15164C360093A141 /* test-process-title.c in Sources */ = {isa = PBXBuildFile; fileRef = 59D3C16B15164C350093A141 /* test-process-title.c */; };
-		59D3C34F15164C360093A141 /* test-ref.c in Sources */ = {isa = PBXBuildFile; fileRef = 59D3C16C15164C350093A141 /* test-ref.c */; };
-		59D3C35015164C360093A141 /* test-run-once.c in Sources */ = {isa = PBXBuildFile; fileRef = 59D3C16D15164C350093A141 /* test-run-once.c */; };
-		59D3C35115164C360093A141 /* test-shutdown-close.c in Sources */ = {isa = PBXBuildFile; fileRef = 59D3C16E15164C350093A141 /* test-shutdown-close.c */; };
-		59D3C35215164C360093A141 /* test-shutdown-eof.c in Sources */ = {isa = PBXBuildFile; fileRef = 59D3C16F15164C350093A141 /* test-shutdown-eof.c */; };
-		59D3C35315164C360093A141 /* test-spawn.c in Sources */ = {isa = PBXBuildFile; fileRef = 59D3C17015164C350093A141 /* test-spawn.c */; };
-		59D3C35415164C360093A141 /* test-stdio-over-pipes.c in Sources */ = {isa = PBXBuildFile; fileRef = 59D3C17115164C350093A141 /* test-stdio-over-pipes.c */; };
-		59D3C35515164C360093A141 /* test-tcp-bind-error.c in Sources */ = {isa = PBXBuildFile; fileRef = 59D3C17215164C350093A141 /* test-tcp-bind-error.c */; };
-		59D3C35615164C360093A141 /* test-tcp-bind6-error.c in Sources */ = {isa = PBXBuildFile; fileRef = 59D3C17315164C350093A141 /* test-tcp-bind6-error.c */; };
-		59D3C35715164C360093A141 /* test-tcp-close.c in Sources */ = {isa = PBXBuildFile; fileRef = 59D3C17415164C350093A141 /* test-tcp-close.c */; };
-		59D3C35815164C360093A141 /* test-tcp-connect-error.c in Sources */ = {isa = PBXBuildFile; fileRef = 59D3C17515164C350093A141 /* test-tcp-connect-error.c */; };
-		59D3C35915164C360093A141 /* test-tcp-connect6-error.c in Sources */ = {isa = PBXBuildFile; fileRef = 59D3C17615164C350093A141 /* test-tcp-connect6-error.c */; };
-		59D3C35A15164C360093A141 /* test-tcp-flags.c in Sources */ = {isa = PBXBuildFile; fileRef = 59D3C17715164C350093A141 /* test-tcp-flags.c */; };
-		59D3C35B15164C360093A141 /* test-tcp-write-error.c in Sources */ = {isa = PBXBuildFile; fileRef = 59D3C17815164C350093A141 /* test-tcp-write-error.c */; };
-		59D3C35C15164C360093A141 /* test-tcp-write-to-half-open-connection.c in Sources */ = {isa = PBXBuildFile; fileRef = 59D3C17915164C350093A141 /* test-tcp-write-to-half-open-connection.c */; };
-		59D3C35D15164C360093A141 /* test-tcp-writealot.c in Sources */ = {isa = PBXBuildFile; fileRef = 59D3C17A15164C350093A141 /* test-tcp-writealot.c */; };
-		59D3C35E15164C360093A141 /* test-thread.c in Sources */ = {isa = PBXBuildFile; fileRef = 59D3C17B15164C350093A141 /* test-thread.c */; };
-		59D3C35F15164C360093A141 /* test-threadpool.c in Sources */ = {isa = PBXBuildFile; fileRef = 59D3C17C15164C350093A141 /* test-threadpool.c */; };
-		59D3C36015164C360093A141 /* test-timer-again.c in Sources */ = {isa = PBXBuildFile; fileRef = 59D3C17D15164C350093A141 /* test-timer-again.c */; };
-		59D3C36115164C360093A141 /* test-timer.c in Sources */ = {isa = PBXBuildFile; fileRef = 59D3C17E15164C350093A141 /* test-timer.c */; };
-		59D3C36215164C360093A141 /* test-tty.c in Sources */ = {isa = PBXBuildFile; fileRef = 59D3C17F15164C350093A141 /* test-tty.c */; };
-		59D3C36315164C360093A141 /* test-udp-dgram-too-big.c in Sources */ = {isa = PBXBuildFile; fileRef = 59D3C18015164C350093A141 /* test-udp-dgram-too-big.c */; };
-		59D3C36415164C360093A141 /* test-udp-ipv6.c in Sources */ = {isa = PBXBuildFile; fileRef = 59D3C18115164C350093A141 /* test-udp-ipv6.c */; };
-		59D3C36515164C360093A141 /* test-udp-multicast-join.c in Sources */ = {isa = PBXBuildFile; fileRef = 59D3C18215164C350093A141 /* test-udp-multicast-join.c */; };
-		59D3C36615164C360093A141 /* test-udp-multicast-ttl.c in Sources */ = {isa = PBXBuildFile; fileRef = 59D3C18315164C350093A141 /* test-udp-multicast-ttl.c */; };
-		59D3C36715164C360093A141 /* test-udp-options.c in Sources */ = {isa = PBXBuildFile; fileRef = 59D3C18415164C350093A141 /* test-udp-options.c */; };
-		59D3C36815164C360093A141 /* test-udp-send-and-recv.c in Sources */ = {isa = PBXBuildFile; fileRef = 59D3C18515164C350093A141 /* test-udp-send-and-recv.c */; };
-		59D3C36915164C360093A141 /* test-util.c in Sources */ = {isa = PBXBuildFile; fileRef = 59D3C18615164C350093A141 /* test-util.c */; };
-		59D3C36A15164C360093A141 /* adler32.c in Sources */ = {isa = PBXBuildFile; fileRef = 59D3C18B15164C350093A141 /* adler32.c */; };
-		59D3C36B15164C360093A141 /* zlib.inc in Sources */ = {isa = PBXBuildFile; fileRef = 59D3C19315164C350093A141 /* zlib.inc */; };
-		59D3C36C15164C360093A141 /* compress.c in Sources */ = {isa = PBXBuildFile; fileRef = 59D3C19615164C350093A141 /* compress.c */; };
-		59D3C36D15164C360093A141 /* buffer_demo.adb in Sources */ = {isa = PBXBuildFile; fileRef = 59D3C19A15164C350093A141 /* buffer_demo.adb */; };
-		59D3C36E15164C360093A141 /* mtest.adb in Sources */ = {isa = PBXBuildFile; fileRef = 59D3C19B15164C350093A141 /* mtest.adb */; };
-		59D3C36F15164C360093A141 /* read.adb in Sources */ = {isa = PBXBuildFile; fileRef = 59D3C19C15164C350093A141 /* read.adb */; };
-		59D3C37015164C360093A141 /* test.adb in Sources */ = {isa = PBXBuildFile; fileRef = 59D3C19E15164C350093A141 /* test.adb */; };
-		59D3C37115164C360093A141 /* zlib-streams.adb in Sources */ = {isa = PBXBuildFile; fileRef = 59D3C19F15164C350093A141 /* zlib-streams.adb */; };
-		59D3C37215164C360093A141 /* zlib-streams.ads in Sources */ = {isa = PBXBuildFile; fileRef = 59D3C1A015164C350093A141 /* zlib-streams.ads */; };
-		59D3C37315164C360093A141 /* zlib-thin.adb in Sources */ = {isa = PBXBuildFile; fileRef = 59D3C1A115164C350093A141 /* zlib-thin.adb */; };
-		59D3C37415164C360093A141 /* zlib-thin.ads in Sources */ = {isa = PBXBuildFile; fileRef = 59D3C1A215164C350093A141 /* zlib-thin.ads */; };
-		59D3C37515164C360093A141 /* zlib.adb in Sources */ = {isa = PBXBuildFile; fileRef = 59D3C1A315164C350093A141 /* zlib.adb */; };
-		59D3C37615164C360093A141 /* zlib.ads in Sources */ = {isa = PBXBuildFile; fileRef = 59D3C1A415164C350093A141 /* zlib.ads */; };
-		59D3C37715164C360093A141 /* amd64-match.S in Sources */ = {isa = PBXBuildFile; fileRef = 59D3C1A715164C350093A141 /* amd64-match.S */; };
-		59D3C37815164C360093A141 /* match.S in Sources */ = {isa = PBXBuildFile; fileRef = 59D3C1A915164C350093A141 /* match.S */; };
-		59D3C37915164C360093A141 /* blast.c in Sources */ = {isa = PBXBuildFile; fileRef = 59D3C1AC15164C350093A141 /* blast.c */; };
-		59D3C37A15164C360093A141 /* Makefile in Sources */ = {isa = PBXBuildFile; fileRef = 59D3C1AE15164C350093A141 /* Makefile */; };
-		59D3C37B15164C360093A141 /* ZLib.pas in Sources */ = {isa = PBXBuildFile; fileRef = 59D3C1B415164C350093A141 /* ZLib.pas */; };
-		59D3C37C15164C360093A141 /* ZLibConst.pas in Sources */ = {isa = PBXBuildFile; fileRef = 59D3C1B515164C350093A141 /* ZLibConst.pas */; };
-		59D3C37D15164C360093A141 /* zlibd32.mak in Sources */ = {isa = PBXBuildFile; fileRef = 59D3C1B615164C350093A141 /* zlibd32.mak */; };
-		59D3C37E15164C360093A141 /* gvmat64.S in Sources */ = {isa = PBXBuildFile; fileRef = 59D3C1C915164C350093A141 /* gvmat64.S */; };
-		59D3C37F15164C360093A141 /* infback9.c in Sources */ = {isa = PBXBuildFile; fileRef = 59D3C1CB15164C350093A141 /* infback9.c */; };
-		59D3C38015164C360093A141 /* inftree9.c in Sources */ = {isa = PBXBuildFile; fileRef = 59D3C1CF15164C350093A141 /* inftree9.c */; };
-		59D3C38115164C360093A141 /* inffas86.c in Sources */ = {isa = PBXBuildFile; fileRef = 59D3C1D315164C350093A141 /* inffas86.c */; };
-		59D3C38215164C360093A141 /* inffast.S in Sources */ = {isa = PBXBuildFile; fileRef = 59D3C1D415164C350093A141 /* inffast.S */; };
-		59D3C38315164C360093A141 /* test.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 59D3C1D615164C350093A141 /* test.cpp */; };
-		59D3C38415164C360093A141 /* zfstream.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 59D3C1D715164C350093A141 /* zfstream.cpp */; };
-		59D3C38515164C360093A141 /* zstream_test.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 59D3C1DB15164C350093A141 /* zstream_test.cpp */; };
-		59D3C38615164C360093A141 /* test.cc in Sources */ = {isa = PBXBuildFile; fileRef = 59D3C1DE15164C350093A141 /* test.cc */; };
-		59D3C38715164C360093A141 /* zfstream.cc in Sources */ = {isa = PBXBuildFile; fileRef = 59D3C1E015164C350093A141 /* zfstream.cc */; };
-		59D3C38815164C360093A141 /* gvmat64.asm in Sources */ = {isa = PBXBuildFile; fileRef = 59D3C1E415164C350093A141 /* gvmat64.asm */; };
-		59D3C38915164C360093A141 /* inffas8664.c in Sources */ = {isa = PBXBuildFile; fileRef = 59D3C1E515164C350093A141 /* inffas8664.c */; };
-		59D3C38A15164C360093A141 /* inffasx64.asm in Sources */ = {isa = PBXBuildFile; fileRef = 59D3C1E615164C350093A141 /* inffasx64.asm */; };
-		59D3C38B15164C360093A141 /* inffas32.asm in Sources */ = {isa = PBXBuildFile; fileRef = 59D3C1EA15164C350093A141 /* inffas32.asm */; };
-		59D3C38C15164C360093A141 /* match686.asm in Sources */ = {isa = PBXBuildFile; fileRef = 59D3C1EB15164C350093A141 /* match686.asm */; };
-		59D3C38D15164C360093A141 /* ioapi.c in Sources */ = {isa = PBXBuildFile; fileRef = 59D3C1F015164C350093A141 /* ioapi.c */; };
-		59D3C38E15164C360093A141 /* iowin32.c in Sources */ = {isa = PBXBuildFile; fileRef = 59D3C1F215164C350093A141 /* iowin32.c */; };
-		59D3C38F15164C360093A141 /* Makefile in Sources */ = {isa = PBXBuildFile; fileRef = 59D3C1F515164C350093A141 /* Makefile */; };
-		59D3C39015164C360093A141 /* miniunz.c in Sources */ = {isa = PBXBuildFile; fileRef = 59D3C1F715164C350093A141 /* miniunz.c */; };
-		59D3C39115164C360093A141 /* minizip.c in Sources */ = {isa = PBXBuildFile; fileRef = 59D3C1F815164C350093A141 /* minizip.c */; };
-		59D3C39215164C360093A141 /* mztools.c in Sources */ = {isa = PBXBuildFile; fileRef = 59D3C1FC15164C350093A141 /* mztools.c */; };
-		59D3C39315164C360093A141 /* unzip.c in Sources */ = {isa = PBXBuildFile; fileRef = 59D3C1FE15164C350093A141 /* unzip.c */; };
-		59D3C39415164C360093A141 /* zip.c in Sources */ = {isa = PBXBuildFile; fileRef = 59D3C20015164C350093A141 /* zip.c */; };
-		59D3C39515164C360093A141 /* example.pas in Sources */ = {isa = PBXBuildFile; fileRef = 59D3C20315164C350093A141 /* example.pas */; };
-		59D3C39615164C360093A141 /* zlibd32.mak in Sources */ = {isa = PBXBuildFile; fileRef = 59D3C20515164C350093A141 /* zlibd32.mak */; };
-		59D3C39715164C360093A141 /* zlibpas.pas in Sources */ = {isa = PBXBuildFile; fileRef = 59D3C20615164C350093A141 /* zlibpas.pas */; };
-		59D3C39815164C360093A141 /* Makefile in Sources */ = {isa = PBXBuildFile; fileRef = 59D3C20815164C350093A141 /* Makefile */; };
-		59D3C39915164C360093A141 /* puff.c in Sources */ = {isa = PBXBuildFile; fileRef = 59D3C20915164C350093A141 /* puff.c */; };
-		59D3C39A15164C360093A141 /* pufftest.c in Sources */ = {isa = PBXBuildFile; fileRef = 59D3C20B15164C350093A141 /* pufftest.c */; };
-		59D3C39B15164C360093A141 /* testzlib.c in Sources */ = {isa = PBXBuildFile; fileRef = 59D3C21015164C350093A141 /* testzlib.c */; };
-		59D3C39C15164C360093A141 /* Makefile in Sources */ = {isa = PBXBuildFile; fileRef = 59D3C21315164C350093A141 /* Makefile */; };
-		59D3C39D15164C360093A141 /* untgz.c in Sources */ = {isa = PBXBuildFile; fileRef = 59D3C21515164C350093A141 /* untgz.c */; };
-		59D3C39E15164C360093A141 /* crc32.c in Sources */ = {isa = PBXBuildFile; fileRef = 59D3C23815164C350093A141 /* crc32.c */; };
-		59D3C39F15164C360093A141 /* deflate.c in Sources */ = {isa = PBXBuildFile; fileRef = 59D3C23A15164C350093A141 /* deflate.c */; };
-		59D3C3A015164C360093A141 /* enough.c in Sources */ = {isa = PBXBuildFile; fileRef = 59D3C24315164C350093A141 /* enough.c */; };
-		59D3C3A115164C360093A141 /* fitblk.c in Sources */ = {isa = PBXBuildFile; fileRef = 59D3C24415164C350093A141 /* fitblk.c */; };
-		59D3C3A215164C360093A141 /* gun.c in Sources */ = {isa = PBXBuildFile; fileRef = 59D3C24515164C350093A141 /* gun.c */; };
-		59D3C3A315164C360093A141 /* gzappend.c in Sources */ = {isa = PBXBuildFile; fileRef = 59D3C24615164C350093A141 /* gzappend.c */; };
-		59D3C3A415164C360093A141 /* gzjoin.c in Sources */ = {isa = PBXBuildFile; fileRef = 59D3C24715164C350093A141 /* gzjoin.c */; };
-		59D3C3A515164C360093A141 /* gzlog.c in Sources */ = {isa = PBXBuildFile; fileRef = 59D3C24815164C350093A141 /* gzlog.c */; };
-		59D3C3A615164C360093A141 /* zpipe.c in Sources */ = {isa = PBXBuildFile; fileRef = 59D3C24C15164C350093A141 /* zpipe.c */; };
-		59D3C3A715164C360093A141 /* zran.c in Sources */ = {isa = PBXBuildFile; fileRef = 59D3C24D15164C350093A141 /* zran.c */; };
-		59D3C3A815164C360093A141 /* gzclose.c in Sources */ = {isa = PBXBuildFile; fileRef = 59D3C24F15164C350093A141 /* gzclose.c */; };
-		59D3C3A915164C360093A141 /* gzlib.c in Sources */ = {isa = PBXBuildFile; fileRef = 59D3C25115164C350093A141 /* gzlib.c */; };
-		59D3C3AA15164C360093A141 /* gzread.c in Sources */ = {isa = PBXBuildFile; fileRef = 59D3C25215164C350093A141 /* gzread.c */; };
-		59D3C3AB15164C360093A141 /* gzwrite.c in Sources */ = {isa = PBXBuildFile; fileRef = 59D3C25315164C350093A141 /* gzwrite.c */; };
-		59D3C3AC15164C360093A141 /* infback.c in Sources */ = {isa = PBXBuildFile; fileRef = 59D3C25515164C350093A141 /* infback.c */; };
-		59D3C3AD15164C360093A141 /* inffast.c in Sources */ = {isa = PBXBuildFile; fileRef = 59D3C25615164C350093A141 /* inffast.c */; };
-		59D3C3AE15164C360093A141 /* inflate.c in Sources */ = {isa = PBXBuildFile; fileRef = 59D3C25915164C350093A141 /* inflate.c */; };
-		59D3C3AF15164C360093A141 /* inftrees.c in Sources */ = {isa = PBXBuildFile; fileRef = 59D3C25B15164C350093A141 /* inftrees.c */; };
-		59D3C3B015164C360093A141 /* Makefile in Sources */ = {isa = PBXBuildFile; fileRef = 59D3C25E15164C350093A141 /* Makefile */; };
-		59D3C3B115164C360093A141 /* Makefile in Sources */ = {isa = PBXBuildFile; fileRef = 59D3C26715164C350093A141 /* Makefile */; };
-		59D3C3B215164C360093A141 /* example.c in Sources */ = {isa = PBXBuildFile; fileRef = 59D3C27515164C350093A141 /* example.c */; };
-		59D3C3B315164C360093A141 /* infcover.c in Sources */ = {isa = PBXBuildFile; fileRef = 59D3C27615164C350093A141 /* infcover.c */; };
-		59D3C3B415164C360093A141 /* minigzip.c in Sources */ = {isa = PBXBuildFile; fileRef = 59D3C27715164C350093A141 /* minigzip.c */; };
-		59D3C3B515164C360093A141 /* trees.c in Sources */ = {isa = PBXBuildFile; fileRef = 59D3C27915164C350093A141 /* trees.c */; };
-		59D3C3B615164C360093A141 /* uncompr.c in Sources */ = {isa = PBXBuildFile; fileRef = 59D3C27B15164C350093A141 /* uncompr.c */; };
-		59D3C3B715164C360093A141 /* watcom_f.mak in Sources */ = {isa = PBXBuildFile; fileRef = 59D3C27D15164C350093A141 /* watcom_f.mak */; };
-		59D3C3B815164C360093A141 /* watcom_l.mak in Sources */ = {isa = PBXBuildFile; fileRef = 59D3C27E15164C350093A141 /* watcom_l.mak */; };
-		59D3C3B915164C360093A141 /* zutil.c in Sources */ = {isa = PBXBuildFile; fileRef = 59D3C29215164C350093A141 /* zutil.c */; };
 		59D3C3BB15164D450093A141 /* main.c in Sources */ = {isa = PBXBuildFile; fileRef = 59D3C3BA15164D450093A141 /* main.c */; };
 /* End PBXBuildFile section */
 
@@ -938,6 +643,7 @@
 		59D3C29315164C350093A141 /* zutil.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = zutil.h; sourceTree = "<group>"; };
 		59D3C3BA15164D450093A141 /* main.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = main.c; sourceTree = "<group>"; };
 		59D3C3BC15164E9A0093A141 /* uv_testbed.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = uv_testbed.h; sourceTree = "<group>"; };
+		59D3C3C115164F1D0093A141 /* uv.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = uv.a; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -967,6 +673,7 @@
 			isa = PBXGroup;
 			children = (
 				59D3BFD715164B6B0093A141 /* uv-testbed */,
+				59D3C3C115164F1D0093A141 /* uv.a */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -2165,6 +1872,21 @@
 			productReference = 59D3BFD715164B6B0093A141 /* uv-testbed */;
 			productType = "com.apple.product-type.tool";
 		};
+		59D3C3C015164F1D0093A141 /* libuv */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 59D3C3C215164F1D0093A141 /* Build configuration list for PBXNativeTarget "libuv" */;
+			buildPhases = (
+				59D3C3C515164F580093A141 /* ShellScript */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = libuv;
+			productName = uv;
+			productReference = 59D3C3C115164F1D0093A141 /* uv.a */;
+			productType = "com.apple.product-type.library.static";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -2187,310 +1909,32 @@
 			projectRoot = "";
 			targets = (
 				59D3BFD615164B6B0093A141 /* uv-testbed */,
+				59D3C3C015164F1D0093A141 /* libuv */,
 			);
 		};
 /* End PBXProject section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		59D3C3C515164F580093A141 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "cd ${PROJECT_DIR}/deps/libuv && make\nmkdir -p ${TARGET_BUILD_DIR}\ncp ${PROJECT_DIR}/deps/libuv/uv.a ${TARGET_BUILD_DIR}/uv.a";
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		59D3BFD315164B6B0093A141 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				59D3BFE915164BB10093A141 /* Makefile in Sources */,
-				59D3C29415164C350093A141 /* arena.c in Sources */,
-				59D3C29515164C350093A141 /* atomic.c in Sources */,
-				59D3C29615164C350093A141 /* base.c in Sources */,
-				59D3C29715164C350093A141 /* bitmap.c in Sources */,
-				59D3C29815164C350093A141 /* chunk.c in Sources */,
-				59D3C29915164C350093A141 /* chunk_dss.c in Sources */,
-				59D3C29A15164C350093A141 /* chunk_mmap.c in Sources */,
-				59D3C29B15164C350093A141 /* chunk_swap.c in Sources */,
-				59D3C29C15164C350093A141 /* ckh.c in Sources */,
-				59D3C29D15164C350093A141 /* ctl.c in Sources */,
-				59D3C29E15164C350093A141 /* extent.c in Sources */,
-				59D3C29F15164C350093A141 /* hash.c in Sources */,
-				59D3C2A015164C350093A141 /* huge.c in Sources */,
-				59D3C2A115164C350093A141 /* jemalloc.c in Sources */,
-				59D3C2A215164C350093A141 /* mb.c in Sources */,
-				59D3C2A315164C350093A141 /* mutex.c in Sources */,
-				59D3C2A415164C350093A141 /* prof.c in Sources */,
-				59D3C2A515164C350093A141 /* rtree.c in Sources */,
-				59D3C2A615164C350093A141 /* stats.c in Sources */,
-				59D3C2A715164C350093A141 /* tcache.c in Sources */,
-				59D3C2A815164C350093A141 /* zone.c in Sources */,
-				59D3C2A915164C350093A141 /* allocated.c in Sources */,
-				59D3C2AA15164C350093A141 /* allocated.exp in Sources */,
-				59D3C2AB15164C350093A141 /* allocm.c in Sources */,
-				59D3C2AC15164C350093A141 /* allocm.exp in Sources */,
-				59D3C2AD15164C350093A141 /* bitmap.c in Sources */,
-				59D3C2AE15164C350093A141 /* bitmap.exp in Sources */,
-				59D3C2AF15164C350093A141 /* mremap.c in Sources */,
-				59D3C2B015164C350093A141 /* mremap.exp in Sources */,
-				59D3C2B115164C350093A141 /* posix_memalign.c in Sources */,
-				59D3C2B215164C350093A141 /* posix_memalign.exp in Sources */,
-				59D3C2B315164C350093A141 /* rallocm.c in Sources */,
-				59D3C2B415164C350093A141 /* rallocm.exp in Sources */,
-				59D3C2B515164C350093A141 /* thread_arena.c in Sources */,
-				59D3C2B615164C350093A141 /* thread_arena.exp in Sources */,
-				59D3C2B715164C350093A141 /* Makefile in Sources */,
-				59D3C2B815164C350093A141 /* ares__close_sockets.c in Sources */,
-				59D3C2B915164C350093A141 /* ares__get_hostent.c in Sources */,
-				59D3C2BA15164C350093A141 /* ares__read_line.c in Sources */,
-				59D3C2BB15164C350093A141 /* ares__timeval.c in Sources */,
-				59D3C2BC15164C350093A141 /* ares_cancel.c in Sources */,
-				59D3C2BD15164C350093A141 /* ares_data.c in Sources */,
-				59D3C2BE15164C350093A141 /* ares_destroy.c in Sources */,
-				59D3C2BF15164C350093A141 /* ares_expand_name.c in Sources */,
-				59D3C2C015164C350093A141 /* ares_expand_string.c in Sources */,
-				59D3C2C115164C350093A141 /* ares_fds.c in Sources */,
-				59D3C2C215164C350093A141 /* ares_free_hostent.c in Sources */,
-				59D3C2C315164C350093A141 /* ares_free_string.c in Sources */,
-				59D3C2C415164C350093A141 /* ares_getenv.c in Sources */,
-				59D3C2C515164C350093A141 /* ares_gethostbyaddr.c in Sources */,
-				59D3C2C615164C350093A141 /* ares_gethostbyname.c in Sources */,
-				59D3C2C715164C350093A141 /* ares_getnameinfo.c in Sources */,
-				59D3C2C815164C350093A141 /* ares_getopt.c in Sources */,
-				59D3C2C915164C350093A141 /* ares_getsock.c in Sources */,
-				59D3C2CA15164C350093A141 /* ares_init.c in Sources */,
-				59D3C2CB15164C350093A141 /* ares_library_init.c in Sources */,
-				59D3C2CC15164C350093A141 /* ares_llist.c in Sources */,
-				59D3C2CD15164C350093A141 /* ares_mkquery.c in Sources */,
-				59D3C2CE15164C350093A141 /* ares_nowarn.c in Sources */,
-				59D3C2CF15164C350093A141 /* ares_options.c in Sources */,
-				59D3C2D015164C350093A141 /* ares_parse_a_reply.c in Sources */,
-				59D3C2D115164C350093A141 /* ares_parse_aaaa_reply.c in Sources */,
-				59D3C2D215164C350093A141 /* ares_parse_mx_reply.c in Sources */,
-				59D3C2D315164C360093A141 /* ares_parse_ns_reply.c in Sources */,
-				59D3C2D415164C360093A141 /* ares_parse_ptr_reply.c in Sources */,
-				59D3C2D515164C360093A141 /* ares_parse_srv_reply.c in Sources */,
-				59D3C2D615164C360093A141 /* ares_parse_txt_reply.c in Sources */,
-				59D3C2D715164C360093A141 /* ares_platform.c in Sources */,
-				59D3C2D815164C360093A141 /* ares_process.c in Sources */,
-				59D3C2D915164C360093A141 /* ares_query.c in Sources */,
-				59D3C2DA15164C360093A141 /* ares_search.c in Sources */,
-				59D3C2DB15164C360093A141 /* ares_send.c in Sources */,
-				59D3C2DC15164C360093A141 /* ares_strcasecmp.c in Sources */,
-				59D3C2DD15164C360093A141 /* ares_strdup.c in Sources */,
-				59D3C2DE15164C360093A141 /* ares_strerror.c in Sources */,
-				59D3C2DF15164C360093A141 /* ares_timeout.c in Sources */,
-				59D3C2E015164C360093A141 /* ares_version.c in Sources */,
-				59D3C2E115164C360093A141 /* ares_writev.c in Sources */,
-				59D3C2E215164C360093A141 /* bitncmp.c in Sources */,
-				59D3C2E315164C360093A141 /* inet_net_pton.c in Sources */,
-				59D3C2E415164C360093A141 /* inet_ntop.c in Sources */,
-				59D3C2E515164C360093A141 /* windows_port.c in Sources */,
-				59D3C2E615164C360093A141 /* cares.c in Sources */,
-				59D3C2E715164C360093A141 /* core.c in Sources */,
-				59D3C2E815164C360093A141 /* cygwin.c in Sources */,
-				59D3C2E915164C360093A141 /* darwin.c in Sources */,
-				59D3C2EA15164C360093A141 /* dl.c in Sources */,
-				59D3C2EB15164C360093A141 /* demo.c in Sources */,
-				59D3C2EC15164C360093A141 /* eio.c in Sources */,
-				59D3C2ED15164C360093A141 /* error.c in Sources */,
-				59D3C2EE15164C360093A141 /* ev.c in Sources */,
-				59D3C2EF15164C360093A141 /* ev_epoll.c in Sources */,
-				59D3C2F015164C360093A141 /* ev_kqueue.c in Sources */,
-				59D3C2F115164C360093A141 /* ev_poll.c in Sources */,
-				59D3C2F215164C360093A141 /* ev_port.c in Sources */,
-				59D3C2F315164C360093A141 /* ev_select.c in Sources */,
-				59D3C2F415164C360093A141 /* ev_win32.c in Sources */,
-				59D3C2F515164C360093A141 /* event.c in Sources */,
-				59D3C2F615164C360093A141 /* freebsd.c in Sources */,
-				59D3C2F715164C360093A141 /* fs.c in Sources */,
-				59D3C2F815164C360093A141 /* kqueue.c in Sources */,
-				59D3C2F915164C360093A141 /* core.c in Sources */,
-				59D3C2FA15164C360093A141 /* inotify.c in Sources */,
-				59D3C2FB15164C360093A141 /* netbsd.c in Sources */,
-				59D3C2FC15164C360093A141 /* openbsd.c in Sources */,
-				59D3C2FD15164C360093A141 /* pipe.c in Sources */,
-				59D3C2FE15164C360093A141 /* process.c in Sources */,
-				59D3C2FF15164C360093A141 /* stream.c in Sources */,
-				59D3C30015164C360093A141 /* sunos.c in Sources */,
-				59D3C30115164C360093A141 /* tcp.c in Sources */,
-				59D3C30215164C360093A141 /* thread.c in Sources */,
-				59D3C30315164C360093A141 /* tty.c in Sources */,
-				59D3C30415164C360093A141 /* udp.c in Sources */,
-				59D3C30515164C360093A141 /* uv-eio.c in Sources */,
-				59D3C30615164C360093A141 /* uv-common.c in Sources */,
-				59D3C30715164C360093A141 /* async.c in Sources */,
-				59D3C30815164C360093A141 /* cares.c in Sources */,
-				59D3C30915164C360093A141 /* core.c in Sources */,
-				59D3C30A15164C360093A141 /* dl.c in Sources */,
-				59D3C30B15164C360093A141 /* error.c in Sources */,
-				59D3C30C15164C360093A141 /* fs-event.c in Sources */,
-				59D3C30D15164C360093A141 /* fs.c in Sources */,
-				59D3C30E15164C360093A141 /* getaddrinfo.c in Sources */,
-				59D3C30F15164C360093A141 /* handle.c in Sources */,
-				59D3C31015164C360093A141 /* loop-watcher.c in Sources */,
-				59D3C31115164C360093A141 /* pipe.c in Sources */,
-				59D3C31215164C360093A141 /* process.c in Sources */,
-				59D3C31315164C360093A141 /* req.c in Sources */,
-				59D3C31415164C360093A141 /* stream.c in Sources */,
-				59D3C31515164C360093A141 /* tcp.c in Sources */,
-				59D3C31615164C360093A141 /* thread.c in Sources */,
-				59D3C31715164C360093A141 /* threadpool.c in Sources */,
-				59D3C31815164C360093A141 /* timer.c in Sources */,
-				59D3C31915164C360093A141 /* tty.c in Sources */,
-				59D3C31A15164C360093A141 /* udp.c in Sources */,
-				59D3C31B15164C360093A141 /* util.c in Sources */,
-				59D3C31C15164C360093A141 /* winapi.c in Sources */,
-				59D3C31D15164C360093A141 /* winsock.c in Sources */,
-				59D3C31E15164C360093A141 /* benchmark-ares.c in Sources */,
-				59D3C31F15164C360093A141 /* benchmark-getaddrinfo.c in Sources */,
-				59D3C32015164C360093A141 /* benchmark-ping-pongs.c in Sources */,
-				59D3C32115164C360093A141 /* benchmark-pound.c in Sources */,
-				59D3C32215164C360093A141 /* benchmark-pump.c in Sources */,
-				59D3C32315164C360093A141 /* benchmark-sizes.c in Sources */,
-				59D3C32415164C360093A141 /* benchmark-spawn.c in Sources */,
-				59D3C32515164C360093A141 /* benchmark-tcp-write-batch.c in Sources */,
-				59D3C32615164C360093A141 /* benchmark-thread.c in Sources */,
-				59D3C32715164C360093A141 /* benchmark-udp-packet-storm.c in Sources */,
-				59D3C32815164C360093A141 /* blackhole-server.c in Sources */,
-				59D3C32915164C360093A141 /* dns-server.c in Sources */,
-				59D3C32A15164C360093A141 /* echo-server.c in Sources */,
-				59D3C32B15164C360093A141 /* run-benchmarks.c in Sources */,
-				59D3C32C15164C360093A141 /* run-tests.c in Sources */,
-				59D3C32D15164C360093A141 /* runner-unix.c in Sources */,
-				59D3C32E15164C360093A141 /* runner-win.c in Sources */,
-				59D3C32F15164C360093A141 /* runner.c in Sources */,
-				59D3C33015164C360093A141 /* test-async.c in Sources */,
-				59D3C33115164C360093A141 /* test-callback-stack.c in Sources */,
-				59D3C33215164C360093A141 /* test-connection-fail.c in Sources */,
-				59D3C33315164C360093A141 /* test-counters-init.c in Sources */,
-				59D3C33415164C360093A141 /* test-cwd-and-chdir.c in Sources */,
-				59D3C33515164C360093A141 /* test-delayed-accept.c in Sources */,
-				59D3C33615164C360093A141 /* test-dlerror.c in Sources */,
-				59D3C33715164C360093A141 /* test-eio-overflow.c in Sources */,
-				59D3C33815164C360093A141 /* test-error.c in Sources */,
-				59D3C33915164C360093A141 /* test-fail-always.c in Sources */,
-				59D3C33A15164C360093A141 /* test-fs-event.c in Sources */,
-				59D3C33B15164C360093A141 /* test-fs.c in Sources */,
-				59D3C33C15164C360093A141 /* test-get-currentexe.c in Sources */,
-				59D3C33D15164C360093A141 /* test-get-loadavg.c in Sources */,
-				59D3C33E15164C360093A141 /* test-get-memory.c in Sources */,
-				59D3C33F15164C360093A141 /* test-getaddrinfo.c in Sources */,
-				59D3C34015164C360093A141 /* test-gethostbyname.c in Sources */,
-				59D3C34115164C360093A141 /* test-getsockname.c in Sources */,
-				59D3C34215164C360093A141 /* test-hrtime.c in Sources */,
-				59D3C34315164C360093A141 /* test-idle.c in Sources */,
-				59D3C34415164C360093A141 /* test-ipc-send-recv.c in Sources */,
-				59D3C34515164C360093A141 /* test-ipc.c in Sources */,
-				59D3C34615164C360093A141 /* test-loop-handles.c in Sources */,
-				59D3C34715164C360093A141 /* test-multiple-listen.c in Sources */,
-				59D3C34815164C360093A141 /* test-mutexes.c in Sources */,
-				59D3C34915164C360093A141 /* test-pass-always.c in Sources */,
-				59D3C34A15164C360093A141 /* test-ping-pong.c in Sources */,
-				59D3C34B15164C360093A141 /* test-pipe-bind-error.c in Sources */,
-				59D3C34C15164C360093A141 /* test-pipe-connect-error.c in Sources */,
-				59D3C34D15164C360093A141 /* test-platform-output.c in Sources */,
-				59D3C34E15164C360093A141 /* test-process-title.c in Sources */,
-				59D3C34F15164C360093A141 /* test-ref.c in Sources */,
-				59D3C35015164C360093A141 /* test-run-once.c in Sources */,
-				59D3C35115164C360093A141 /* test-shutdown-close.c in Sources */,
-				59D3C35215164C360093A141 /* test-shutdown-eof.c in Sources */,
-				59D3C35315164C360093A141 /* test-spawn.c in Sources */,
-				59D3C35415164C360093A141 /* test-stdio-over-pipes.c in Sources */,
-				59D3C35515164C360093A141 /* test-tcp-bind-error.c in Sources */,
-				59D3C35615164C360093A141 /* test-tcp-bind6-error.c in Sources */,
-				59D3C35715164C360093A141 /* test-tcp-close.c in Sources */,
-				59D3C35815164C360093A141 /* test-tcp-connect-error.c in Sources */,
-				59D3C35915164C360093A141 /* test-tcp-connect6-error.c in Sources */,
-				59D3C35A15164C360093A141 /* test-tcp-flags.c in Sources */,
-				59D3C35B15164C360093A141 /* test-tcp-write-error.c in Sources */,
-				59D3C35C15164C360093A141 /* test-tcp-write-to-half-open-connection.c in Sources */,
-				59D3C35D15164C360093A141 /* test-tcp-writealot.c in Sources */,
-				59D3C35E15164C360093A141 /* test-thread.c in Sources */,
-				59D3C35F15164C360093A141 /* test-threadpool.c in Sources */,
-				59D3C36015164C360093A141 /* test-timer-again.c in Sources */,
-				59D3C36115164C360093A141 /* test-timer.c in Sources */,
-				59D3C36215164C360093A141 /* test-tty.c in Sources */,
-				59D3C36315164C360093A141 /* test-udp-dgram-too-big.c in Sources */,
-				59D3C36415164C360093A141 /* test-udp-ipv6.c in Sources */,
-				59D3C36515164C360093A141 /* test-udp-multicast-join.c in Sources */,
-				59D3C36615164C360093A141 /* test-udp-multicast-ttl.c in Sources */,
-				59D3C36715164C360093A141 /* test-udp-options.c in Sources */,
-				59D3C36815164C360093A141 /* test-udp-send-and-recv.c in Sources */,
-				59D3C36915164C360093A141 /* test-util.c in Sources */,
-				59D3C36A15164C360093A141 /* adler32.c in Sources */,
-				59D3C36B15164C360093A141 /* zlib.inc in Sources */,
-				59D3C36C15164C360093A141 /* compress.c in Sources */,
-				59D3C36D15164C360093A141 /* buffer_demo.adb in Sources */,
-				59D3C36E15164C360093A141 /* mtest.adb in Sources */,
-				59D3C36F15164C360093A141 /* read.adb in Sources */,
-				59D3C37015164C360093A141 /* test.adb in Sources */,
-				59D3C37115164C360093A141 /* zlib-streams.adb in Sources */,
-				59D3C37215164C360093A141 /* zlib-streams.ads in Sources */,
-				59D3C37315164C360093A141 /* zlib-thin.adb in Sources */,
-				59D3C37415164C360093A141 /* zlib-thin.ads in Sources */,
-				59D3C37515164C360093A141 /* zlib.adb in Sources */,
-				59D3C37615164C360093A141 /* zlib.ads in Sources */,
-				59D3C37715164C360093A141 /* amd64-match.S in Sources */,
-				59D3C37815164C360093A141 /* match.S in Sources */,
-				59D3C37915164C360093A141 /* blast.c in Sources */,
-				59D3C37A15164C360093A141 /* Makefile in Sources */,
-				59D3C37B15164C360093A141 /* ZLib.pas in Sources */,
-				59D3C37C15164C360093A141 /* ZLibConst.pas in Sources */,
-				59D3C37D15164C360093A141 /* zlibd32.mak in Sources */,
-				59D3C37E15164C360093A141 /* gvmat64.S in Sources */,
-				59D3C37F15164C360093A141 /* infback9.c in Sources */,
-				59D3C38015164C360093A141 /* inftree9.c in Sources */,
-				59D3C38115164C360093A141 /* inffas86.c in Sources */,
-				59D3C38215164C360093A141 /* inffast.S in Sources */,
-				59D3C38315164C360093A141 /* test.cpp in Sources */,
-				59D3C38415164C360093A141 /* zfstream.cpp in Sources */,
-				59D3C38515164C360093A141 /* zstream_test.cpp in Sources */,
-				59D3C38615164C360093A141 /* test.cc in Sources */,
-				59D3C38715164C360093A141 /* zfstream.cc in Sources */,
-				59D3C38815164C360093A141 /* gvmat64.asm in Sources */,
-				59D3C38915164C360093A141 /* inffas8664.c in Sources */,
-				59D3C38A15164C360093A141 /* inffasx64.asm in Sources */,
-				59D3C38B15164C360093A141 /* inffas32.asm in Sources */,
-				59D3C38C15164C360093A141 /* match686.asm in Sources */,
-				59D3C38D15164C360093A141 /* ioapi.c in Sources */,
-				59D3C38E15164C360093A141 /* iowin32.c in Sources */,
-				59D3C38F15164C360093A141 /* Makefile in Sources */,
-				59D3C39015164C360093A141 /* miniunz.c in Sources */,
-				59D3C39115164C360093A141 /* minizip.c in Sources */,
-				59D3C39215164C360093A141 /* mztools.c in Sources */,
-				59D3C39315164C360093A141 /* unzip.c in Sources */,
-				59D3C39415164C360093A141 /* zip.c in Sources */,
-				59D3C39515164C360093A141 /* example.pas in Sources */,
-				59D3C39615164C360093A141 /* zlibd32.mak in Sources */,
-				59D3C39715164C360093A141 /* zlibpas.pas in Sources */,
-				59D3C39815164C360093A141 /* Makefile in Sources */,
-				59D3C39915164C360093A141 /* puff.c in Sources */,
-				59D3C39A15164C360093A141 /* pufftest.c in Sources */,
-				59D3C39B15164C360093A141 /* testzlib.c in Sources */,
-				59D3C39C15164C360093A141 /* Makefile in Sources */,
-				59D3C39D15164C360093A141 /* untgz.c in Sources */,
-				59D3C39E15164C360093A141 /* crc32.c in Sources */,
-				59D3C39F15164C360093A141 /* deflate.c in Sources */,
-				59D3C3A015164C360093A141 /* enough.c in Sources */,
-				59D3C3A115164C360093A141 /* fitblk.c in Sources */,
-				59D3C3A215164C360093A141 /* gun.c in Sources */,
-				59D3C3A315164C360093A141 /* gzappend.c in Sources */,
-				59D3C3A415164C360093A141 /* gzjoin.c in Sources */,
-				59D3C3A515164C360093A141 /* gzlog.c in Sources */,
-				59D3C3A615164C360093A141 /* zpipe.c in Sources */,
-				59D3C3A715164C360093A141 /* zran.c in Sources */,
-				59D3C3A815164C360093A141 /* gzclose.c in Sources */,
-				59D3C3A915164C360093A141 /* gzlib.c in Sources */,
-				59D3C3AA15164C360093A141 /* gzread.c in Sources */,
-				59D3C3AB15164C360093A141 /* gzwrite.c in Sources */,
-				59D3C3AC15164C360093A141 /* infback.c in Sources */,
-				59D3C3AD15164C360093A141 /* inffast.c in Sources */,
-				59D3C3AE15164C360093A141 /* inflate.c in Sources */,
-				59D3C3AF15164C360093A141 /* inftrees.c in Sources */,
-				59D3C3B015164C360093A141 /* Makefile in Sources */,
-				59D3C3B115164C360093A141 /* Makefile in Sources */,
-				59D3C3B215164C360093A141 /* example.c in Sources */,
-				59D3C3B315164C360093A141 /* infcover.c in Sources */,
-				59D3C3B415164C360093A141 /* minigzip.c in Sources */,
-				59D3C3B515164C360093A141 /* trees.c in Sources */,
-				59D3C3B615164C360093A141 /* uncompr.c in Sources */,
-				59D3C3B715164C360093A141 /* watcom_f.mak in Sources */,
-				59D3C3B815164C360093A141 /* watcom_l.mak in Sources */,
-				59D3C3B915164C360093A141 /* zutil.c in Sources */,
 				59D3C3BB15164D450093A141 /* main.c in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -2569,6 +2013,22 @@
 			};
 			name = Release;
 		};
+		59D3C3C315164F1D0093A141 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				EXECUTABLE_PREFIX = "";
+				PRODUCT_NAME = uv;
+			};
+			name = Debug;
+		};
+		59D3C3C415164F1D0093A141 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				EXECUTABLE_PREFIX = "";
+				PRODUCT_NAME = uv;
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -2586,6 +2046,14 @@
 			buildConfigurations = (
 				59D3BFE215164B6B0093A141 /* Debug */,
 				59D3BFE315164B6B0093A141 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		59D3C3C215164F1D0093A141 /* Build configuration list for PBXNativeTarget "libuv" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				59D3C3C315164F1D0093A141 /* Debug */,
+				59D3C3C415164F1D0093A141 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 		};
