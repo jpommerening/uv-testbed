@@ -644,6 +644,7 @@
 		59D3C3BA15164D450093A141 /* main.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = main.c; sourceTree = "<group>"; };
 		59D3C3BC15164E9A0093A141 /* uv_testbed.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = uv_testbed.h; sourceTree = "<group>"; };
 		59D3C3C115164F1D0093A141 /* uv.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = uv.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		59D3C3CD151651500093A141 /* libjemalloc.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libjemalloc.a; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -674,6 +675,7 @@
 			children = (
 				59D3BFD715164B6B0093A141 /* uv-testbed */,
 				59D3C3C115164F1D0093A141 /* uv.a */,
+				59D3C3CD151651500093A141 /* libjemalloc.a */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -1887,6 +1889,21 @@
 			productReference = 59D3C3C115164F1D0093A141 /* uv.a */;
 			productType = "com.apple.product-type.library.static";
 		};
+		59D3C3CC151651500093A141 /* jemalloc */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 59D3C3CE151651500093A141 /* Build configuration list for PBXNativeTarget "jemalloc" */;
+			buildPhases = (
+				59D3C3D1151651610093A141 /* ShellScript */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = jemalloc;
+			productName = jemalloc;
+			productReference = 59D3C3CD151651500093A141 /* libjemalloc.a */;
+			productType = "com.apple.product-type.library.static";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -1910,6 +1927,7 @@
 			targets = (
 				59D3BFD615164B6B0093A141 /* uv-testbed */,
 				59D3C3C015164F1D0093A141 /* libuv */,
+				59D3C3CC151651500093A141 /* jemalloc */,
 			);
 		};
 /* End PBXProject section */
@@ -1926,7 +1944,20 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "cd ${PROJECT_DIR}/deps/libuv && make\nmkdir -p ${TARGET_BUILD_DIR}\ncp ${PROJECT_DIR}/deps/libuv/uv.a ${TARGET_BUILD_DIR}/uv.a";
+			shellScript = "cd ${PROJECT_DIR}/deps/libuv\nmake\nmkdir -p ${TARGET_BUILD_DIR}\ncp ${PROJECT_DIR}/deps/libuv/uv.a ${TARGET_BUILD_DIR}/uv.a";
+		};
+		59D3C3D1151651610093A141 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "cd ${PROJECT_DIR}/deps/jemalloc\n[ -f configure ] || autoconf\n[ -f config.status ] || ./configure\nmake\nmkdir -p ${TARGET_BUILD_DIR}\ncp ${PROJECT_DIR}/deps/jemalloc/lib/libjemalloc.a ${TARGET_BUILD_DIR}/libjemalloc.a";
 		};
 /* End PBXShellScriptBuildPhase section */
 
@@ -2029,6 +2060,22 @@
 			};
 			name = Release;
 		};
+		59D3C3CF151651500093A141 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				EXECUTABLE_PREFIX = lib;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		59D3C3D0151651500093A141 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				EXECUTABLE_PREFIX = lib;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -2054,6 +2101,14 @@
 			buildConfigurations = (
 				59D3C3C315164F1D0093A141 /* Debug */,
 				59D3C3C415164F1D0093A141 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		59D3C3CE151651500093A141 /* Build configuration list for PBXNativeTarget "jemalloc" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				59D3C3CF151651500093A141 /* Debug */,
+				59D3C3D0151651500093A141 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 		};
