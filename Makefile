@@ -16,7 +16,10 @@ JEMALLOC_LIB = libjemalloc.a
 ZLIB_LIB = libz.a
 LIBUV_LIB = uv.a
 
-.PHONY: default deps $(DEPS) compile test all install
+CFLAGS = -pthread -Iinclude -Ideps/jemalloc/ -Ideps/libuv/include/ -Ideps/zlib/
+LDFLAGS = -ldl -lrt -lm
+
+.PHONY: default deps $(DEPS) compile test all clean install
 
 all: compile test
 default: compile
@@ -45,8 +48,10 @@ $(LIB_DIR)/$(ZLIB_LIB):
 
 $(BIN_DIR)/$(PROJECT_NAME): src/main.c $(DEPS)
 	mkdir -p $(BIN_DIR)
-	$(CC) -pthread -L$(LIB_DIR) -ljemalloc -lz -luv \
-	  -Iinclude -Ideps/jemalloc/ -Ideps/libuv/include/ -Ideps/zlib/ -o $@ $<
+	$(CC) $(CFLAGS) $(LDFLAGS) \
+	  -Iinclude -Ideps/jemalloc/ -Ideps/libuv/include/ -Ideps/zlib/ -o $@ $< \
+	  $(LIB_DIR)/$(JEMALLOC_LIB) $(LIB_DIR)/$(LIBUV_LIB) $(LIB_DIR)/$(ZLIB_LIB)
+	 
 
 $(LIB_DIR)/lib$(PROJECT_NAME).a:
 	mkdir -p $(LIB_DIR)
