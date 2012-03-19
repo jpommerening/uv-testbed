@@ -5,9 +5,12 @@ BUILD_DIR = build
 SOURCE_DIR = src
 INCLUDE_DIR = include
 
+LIB_DIR = $(BUILD_DIR)/lib
+BIN_DIR = $(BUILD_DIR)/bin
+
 DEPS = jemalloc zlib libuv
-LIBS = lib/lib$(PROJECT_NAME).a
-BINS = bin/$(PROJECT_NAME)
+LIBS = $(LIB_DIR)/lib$(PROJECT_NAME).a
+BINS = $(BIN_DIR)/$(PROJECT_NAME)
 
 JEMALLOC_LIB = libjemalloc.a
 ZLIB_LIB = libz.a
@@ -21,19 +24,30 @@ default: compile
 deps: $(DEPS)
 compile: $(DEPS) $(LIBS) $(BINS)
 
-jemalloc: $(BUILD_DIR)/$(JEMALLOC_LIB)
-zlib: $(BUILD_DIR)/$(ZLIB_LIB)
-libuv: $(BUILD_DIR)/$(LIBUV_LIB)
+jemalloc: $(LIB_DIR)/$(JEMALLOC_LIB)
+zlib: $(LIB_DIR)/$(ZLIB_LIB)
+libuv: $(LIB_DIR)/$(LIBUV_LIB)
 
-$(BUILD_DIR)/$(JEMALLOC_LIB):
-	cd deps/jemalloc && autoconf && ./configure && $(MAKE)
-	cp deps/jemalloc/lib/libjemalloc.a $@
+$(LIB_DIR)/$(JEMALLOC_LIB):
+	mkdir -p $(LIB_DIR)
+	cd deps/jemalloc && $(MAKE)
+	cp deps/jemalloc/$(JEMALLOC_LIB) $@
 
-$(BUILD_DIR)/$(ZLIB_LIB):
+$(LIB_DIR)/$(LIBUV_LIB):
+	mkdir -p $(LIB_DIR)
+	cd deps/libuv && $(MAKE)
+	cp deps/libuv/$(LIBUV_LIB) $@
+
+$(LIB_DIR)/$(ZLIB_LIB):
+	mkdir -p $(LIB_DIR)
 	cd deps/zlib && ./configure --static && $(MAKE)
-	cp deps/zlib/libz.a $@
+	cp deps/zlib/$(ZLIB_LIB) $@
 
-$(BUILD_DIR)/$(LIBUV_LIB):
-	cd deps/libuv && make
-	cp deps/libuv/uv.a $@
+$(BIN_DIR)/$(PROJECT_NAME): src/main.c $(DEPS)
+	mkdir -p $(BIN_DIR)
+	$(CC) -pthread -L$(LIB_DIR) -ljemalloc -lz -luv \
+	  -Iinclude -Ideps/jemalloc/ -Ideps/libuv/include/ -Ideps/zlib/ -o $@ $<
 
+$(LIB_DIR)/lib$(PROJECT_NAME).a:
+	mkdir -p $(LIB_DIR)
+	echo
