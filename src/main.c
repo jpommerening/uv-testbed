@@ -1,6 +1,7 @@
 #include <stdio.h>
 #include <uv.h>
 #include <zlib.h>
+#include <fnmatch.h>
 #include "uv_testbed.h"
 
 static void _async_callback( uv_async_t * async, int status ) {

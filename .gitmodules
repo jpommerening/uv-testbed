@@ -6,4 +6,7 @@
 	url = https://github.com/joyent/libuv.git
 [submodule "deps/jemalloc"]
 	path = deps/jemalloc
-	url = https://github.com/jpommerening/jemalloc-mozilla.git
+	url = https://github.com/jpommerening/jemalloc.git
+[submodule "deps/fnmatch"]
+	path = deps/fnmatch
+	url = https://github.com/jpommerening/fnmatch.git
